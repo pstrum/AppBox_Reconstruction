@@ -1,19 +1,14 @@
-/*
-*
-* ACCESS COLORS FUNCTION
-*
-*/
+
+// ACCESS COLORS FUNCTION
+
 @function color($key: 'primary') {
   @return map-get($appbox-colors, $key);
 }
-// EX: background-color: color(primary); // #252525
 
 
-/*
-*
-* CHANGE OPACITY FUNCTION
-*
-*/
+
+// CHANGE OPACITY FUNCTION
+
 @function appbox-color-opacity($name: $primary-color, $opacity: 0) {
   @return rgba($name, $opacity);
 }

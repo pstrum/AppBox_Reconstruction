@@ -1,8 +1,6 @@
-/*
-*
-* MONOCHROMATIC THEME COLOR PALETTE
-*
-*/
+
+// MONOCHROMATIC THEME COLOR PALETTE
+
 
 $primary-color: #252525;    //Dark Grey
 $accent-color: #05c3f9;     //Sky Blue
@@ -10,15 +8,9 @@ $base-color: #ffffff;       //White ------ DOCUMENT BACKGROUND
 $text-color: #ffffff;       //White
 $secondary-color: #383838;  //Light Grey
 
-// EX: background-color: $primary-color; // #252525
 
 
-
-/*
-*
-* OTHER COMMON COLOR VARIATIONS
-*
-*/
+// OTHER COMMON COLOR VARIATIONS
 
 // HEADER & SECTION 1 BACKGROUND
 $header-background: #162327;
@@ -33,7 +25,7 @@ $accent-border: #0394be;
 $profile-image-border: #04aede;
 
 // BORDER FOR WHITE BUTTON/LINK
-$base-border: #037fa2);
+$base-border: #037fa2;
 
 // HOVER COLOR FOR 'MORE APPS'
 $hover-background: #333333;
