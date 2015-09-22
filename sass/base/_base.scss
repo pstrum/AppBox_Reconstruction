@@ -27,8 +27,9 @@ $border-colors: (
 
 $text-colors: (
   'primary': #ffffff,
-  'secondary': #000000,                            // ('OTHER APPS')
-  'placeholder': mix(white, color('primary'), 30%) // FORM PLACEHOLDER COLOR
+  'secondary': #000000,                             // ('OTHER APPS')
+  'placeholder': mix(white, color('primary'), 30%),  // FORM PLACEHOLDER COLOR
+  'icon': mix(white, color('primary'), 45.5%)       // TEXT ICON
 );
 // EX: $media-color: text('secondary') // #000000
 
