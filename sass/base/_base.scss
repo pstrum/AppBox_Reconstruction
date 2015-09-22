@@ -1,0 +1,95 @@
+// MONOCHROMATIC THEME COLOR PALETTE
+
+$theme-colors: (
+  'primary': #252525,   //Dark Grey
+  'accent': #05c3f9,    //Sky Blue
+  'secondary': #383838, //Light Grey
+  'base': #ffffff,      //White ------ DOCUMENT BACKGROUND
+);
+// EX: $button-color: color('primary'); // #252525
+
+
+
+// BORDER COLORS
+
+$border-colors: (
+  'primary': mix(white, color('primary'), 45.5%),// PRIMARY (GREY) BUTTON/LINK BORDER & SECTION H1 UNDERLINE
+  'accent': mix(black, color('accent'), 30.1%),  // BORDER FOR ACCENT (BLUE) BUTTON/LINK
+  'profile': mix(black, color('accent'), 11%),   // QUOTES & TEAM MEMBER IMAGE BORDER
+  'base': mix(black, color('accent'), 35%),      // BORDER FOR WHITE BUTTON/LINK
+  'input': mix(white, color('primary'), 39%)     // BOTTOM INPUT FIELD BORDER
+);
+// EX: $border-color: border('primary'); // #888888
+
+
+
+// TEXT COLORS
+
+$text-colors: (
+  'primary': #ffffff,
+  'secondary': #000000,                            // ('OTHER APPS')
+  'placeholder': mix(white, color('primary'), 30%) // FORM PLACEHOLDER COLOR
+);
+// EX: $media-color: text('secondary') // #000000
+
+
+// MISC COLORS
+
+$hero-background: #162327;
+$hover-other-apps: mix(white, color('primary'), 6.5%);// HOVER COLOR FOR 'MORE APPS'
+$divider-color: mix(white, color('primary'), 18.5%);  // DIVIDER DOTS ('WHY CHOOSE APPBOX SECTION')
+$star-color: #ff9c1c;                                 // STARS IN THE APPBOX REVIEWS
+$disabled-color: #e0e0e0;                             // GREY STARS AND DISABLED TEXT
+
+
+
+
+
+//
+// COLOR REFERENCE
+//
+
+// $primary-color: #252525;    //Dark Grey
+// $accent-color: #05c3f9;     //Sky Blue
+// $base-color: #ffffff;       //White ------ DOCUMENT BACKGROUND
+// $secondary-color: #383838;  //Light Grey
+
+// HEADER & SECTION 1 BACKGROUND
+// $hero-background: #162327;
+
+// PRIMARY (GREY) BUTTON/LINK BORDER & SECTION H1 UNDERLINE
+// $primary-border: #888888;
+// $primary-border: mix(white, color('primary'), 45.5%);
+
+// BORDER FOR ACCENT (BLUE) BUTTON/LINK
+// $accent-border: #0394be;
+// $accent-border: mix(black, color('accent'), 30.1%);
+
+// QUOTES & TEAM MEMBER IMAGE BORDER
+// $profile-image-border: #04aede;
+// $profile-image-border: mix(black, color('accent'), 11%);
+
+// BORDER FOR WHITE BUTTON/LINK
+// $base-border: #037fa2;
+// $base-border: mix(black, color('accent'), 35%);
+
+// HOVER COLOR FOR 'MORE APPS'
+// $hover-other-apps: #333333;
+// $hover-other-apps: mix(white, color('primary'), 6.5%);
+
+// FORM PLACEHOLDER COLOR & BORDERS
+// $placeholder-color: #666666;
+// $placeholder-color: mix(white, color('primary'), 30%);
+
+// DIVIDER DOTS ('WHY CHOOSE APPBOX SECTION')
+// $divider-color: #4d4d4d;
+// $divider-color: mix(white, color('primary'), 18.5%);
+
+// ('OTHER APPS')
+// $secondary-text-color: #000000;
+
+// STARS IN THE APPBOX REVIEWS
+// $fallback-accent-color: #ff9c1c;
+
+// GREY STARS AND DISABLED TEXT
+// $disabled-color: #e0e0e0;
