@@ -5,7 +5,9 @@
   border-left: solid 1px;
   border-right: solid 1px;
   border-color: $border;
+  border-radius: 25px;
   text-decoration: none;
+  text-align: center;
   background-color: $background;
   color: color('base');
   margin: 0 auto;
@@ -31,6 +33,7 @@
 
 .btn-large {
   @include button(transparent, color('secondary'));
+  padding: 1em;
   &:hover {
     @extend %btn-hover;
   }
