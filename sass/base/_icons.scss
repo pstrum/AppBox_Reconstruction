@@ -1,0 +1,75 @@
+%icon-font-base {
+  font-family: 'AppBox';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$iconPrimary:
+(computer "\e600")
+(screen "\e601")
+(cog2 "\e611")
+(lab "\e612")
+(airplane "\e613")
+(apple "\e607")
+(flag "\e608")
+(coffee "\e609")
+(cubes "\e60a")
+(phone "\e60c")
+(envelope "\e60d")
+(location "\e60e")
+(bubble "\e60f");
+
+$iconBase:
+(dribbble "\e602")
+(google-plus "\e603")
+(twitter "\e604")
+(facebook "\e605")
+(pinterest "\e606")
+(search "\e610")
+(play4 "\e614")
+(apple2 "\e615")
+(behance "\e60b")
+(android "\e616");
+
+@each $iconP in $iconPrimary {
+  .icon-#{nth($iconP, 1)} {
+    @extend %icon-font-base;
+    font-size: 3em;
+    background-color: transparent;
+    color: color('accent');
+    width: 100%;
+    border-top: solid 5px;
+    border-bottom: solid 5px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-color: color('secondary');
+    border-radius: 50%;
+    padding: 1.5rem;
+    &:before {
+      content: nth($iconP, 2);
+    }
+    &:hover {
+      color: color('secondary');
+      border-color: color('accent');
+    }
+  }
+}
+
+@each $iconB in $iconBase {
+  .icon-#{nth($iconB, 1)} {
+    @extend %icon-font-base;
+    font-size: .75em;
+    background-color: transparent;
+    color: color('base');
+    padding: 1rem;
+    &:before {
+      content: nth($iconB, 2);
+    }
+  }
+}
