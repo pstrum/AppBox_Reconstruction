@@ -11,19 +11,19 @@
 }
 
 $iconPrimary:
-(computer "\e600")
-(screen "\e601")
-(cog2 "\e611")
-(lab "\e612")
-(airplane "\e613")
-(apple "\e607")
-(flag "\e608")
-(coffee "\e609")
-(cubes "\e60a")
-(phone "\e60c")
-(envelope "\e60d")
-(location "\e60e")
-(bubble "\e60f");
+(computer 3em "\e600")
+(cog 3em "\e611")
+(lab 3em "\e612")
+(airplane 3em "\e613")
+(screen 1.5em "\e601")
+(apple 1.5em "\e607")
+(flag 1.5em "\e608")
+(coffee 1.5em "\e609")
+(cubes 1.5em "\e60a")
+(phone 1.5em "\e60c")
+(envelope 1.5em "\e60d")
+(location 1.5em "\e60e")
+(bubble 1.5em "\e60f");
 
 $iconBase:
 (dribbble "\e602")
@@ -40,7 +40,7 @@ $iconBase:
 @each $iconP in $iconPrimary {
   .icon-#{nth($iconP, 1)} {
     @extend %icon-font-base;
-    font-size: 3em;
+    font-size: #{nth($iconP, 2)};
     background-color: transparent;
     color: color('accent');
     width: 100%;
@@ -52,7 +52,7 @@ $iconBase:
     border-radius: 50%;
     padding: 1.5rem;
     &:before {
-      content: nth($iconP, 2);
+      content: nth($iconP, 3);
     }
     &:hover {
       color: color('secondary');
