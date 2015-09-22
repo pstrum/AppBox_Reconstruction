@@ -1,29 +1,34 @@
 
 // FONT FAMILIES
 
-$primary-font:        'Roboto', sans-serif;
-$secondary-font:      'Raleway', sans-serif;
-$primary-alternate:   'Roboto Condensed', sans-serif;
+$primary-font:      'Roboto', sans-serif;
+$secondary-font:    'Raleway', sans-serif;
+$primary-alternate: 'Roboto Condensed', sans-serif;
 
 // FONT SIZES
 
-$base-font-size:      16px;
+$base-font-size:    16px;
 
-$font-smaller:        0.75em;    // 12px
-$font-small:          0.875em;   // 14px
-$font-regular:        0.9375em;  // 15px
-$font-large:          1em;       // 16px
-$blockquote:          1.0625em;  // 17px
-$font-larger:         2em;       // 32px
-$font-hero:           2.5em;     // 40px
+$font-smaller:      0.75em;    // 12px
+$font-small:        0.875em;   // 14px
+$font-regular:      0.9375em;  // 15px
+$font-large:        1em;       // 16px
+$blockquote:        1.0625em;  // 17px
+$font-larger:       2em;       // 32px
+$font-hero:         2.5em;     // 40px
 
 // FONT WEIGHTS
 
-$font-weight-light:    300;
-$font-weight-regular:  400;
-$font-weight-medium:   500;
-$font-weight-semibold: 600;
-$font-weight-bold:     700;
+$font-weight-l:     300;
+$font-weight-r:     400;
+$font-weight-m:     500;
+$font-weight-sb:    600;
+$font-weight-b:     700;
+
+// LINE HEIGHTS
+
+$primary-lh:        1.67;
+$secondary-lh:      1.375;
 
 
 // GUIDE TO COMP TYPOGRAPHY
@@ -46,7 +51,7 @@ $font-weight-bold:     700;
 // Section 2
 // H1:    -------  Raleway, Light, 32pt          $font-larger
 // H2:    -------  Raleway, SemiBold, 15pt       $font-regular
-// P:     -------  Roboto, Light, 12pt, 1.67(lh) $font-smaller
+// P:     -------  Roboto, Light, 12pt, 1.67(lh) $font-smaller, $primary-lh
 
 // Section 3
 // H1:    -------  Raleway, SemiBold, 28pt       1.75em
@@ -60,7 +65,7 @@ $font-weight-bold:     700;
 // Section 4
 // H1:    -------  Raleway, Light, 32pt          $font-larger
 // H2:    -------  Raleway, SemiBold, 15pt       $font-regular
-// P:     -------  Roboto, Light, 12pt, 1.67(lh) $font-smaller
+// P:     -------  Roboto, Light, 12pt, 1.67(lh) $font-smaller, $primary-lh
 
 // Section 5
 // H1:    -------  Raleway, Regular, 32pt        $font-larger
@@ -92,7 +97,7 @@ $font-weight-bold:     700;
 
 // Section 9
 // H1:    -------  Raleway, Light, 32pt          $font-larger
-// P:     -------  Roboto, Light, 14pt,1.375(lh) $font-small
+// P:     -------  Roboto, Light, 14pt,1.375(lh) $font-small, $secondary-lh
 // TH:    -------  Raleway, SemiBold, 15pt       $font-regular
 // TD-SPAN:------  Roboto, BoldCondensed, 26pt   1.625em
 // TD-Price:-----  Roboto, Light, 10pt           0.625em
@@ -110,7 +115,7 @@ $font-weight-bold:     700;
 
 // Section 12
 // H1:    -------  Raleway, Light, 32pt          $font-larger
-// P:     -------  Roboto, Light, 14pt,1.375(lh) $font-small
+// P:     -------  Roboto, Light, 14pt,1.375(lh) $font-small, $secondary-lh
 // H2:    -------  Raleway, SemiBold, 15pt       $font-regular
 // A:     -------  Roboto, Light, 12pt, 1.83(lh) $font-smaller
 // PLACEHOLDER:--  Roboto, Light, 12pt           $font-smaller
