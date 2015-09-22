@@ -1,21 +1,29 @@
 
 // FONT FAMILIES
 
-$primary-font: 'Roboto', sans-serif;
-$secondary-font: 'Raleway', sans-serif;
-$primary-alternate: 'Roboto Condensed', sans-serif;
+$primary-font:        'Roboto', sans-serif;
+$secondary-font:      'Raleway', sans-serif;
+$primary-alternate:   'Roboto Condensed', sans-serif;
 
 // FONT SIZES
 
-$base-font-size: 16px;
+$base-font-size:      16px;
 
-$font-smaller: 0.75em;    // 12px
-$font-small: 0.875em;     // 14px
-$font-regular: 0.9375em;  // 15px
-$font-large: 1em;         // 16px
-$blockquote: 1.0625em;    // 17px
-$font-larger: 2em;        // 32px
-$font-hero: 2.5em;        // 40px
+$font-smaller:        0.75em;    // 12px
+$font-small:          0.875em;   // 14px
+$font-regular:        0.9375em;  // 15px
+$font-large:          1em;       // 16px
+$blockquote:          1.0625em;  // 17px
+$font-larger:         2em;       // 32px
+$font-hero:           2.5em;     // 40px
+
+// FONT WEIGHTS
+
+$font-weight-light:    300;
+$font-weight-regular:  400;
+$font-weight-medium:   500;
+$font-weight-semibold: 600;
+$font-weight-bold:     700;
 
 
 // GUIDE TO COMP TYPOGRAPHY
