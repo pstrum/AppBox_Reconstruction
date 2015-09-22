@@ -2,10 +2,16 @@
 // ACCESS COLORS FUNCTION
 
 @function color($key: 'primary') {
-  @return map-get($appbox-colors, $key);
+  @return map-get($theme-colors, $key);
 }
 
+@function border($key: 'primary') {
+  @return map-get($border-colors, $key);
+}
 
+@function text($key: 'primary') {
+  @return map-get($text-colors, $key);
+}
 
 // CHANGE OPACITY FUNCTION
 
