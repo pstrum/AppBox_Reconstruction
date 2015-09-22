@@ -67,7 +67,7 @@ $iconBase:
     font-size: .75em;
     background-color: transparent;
     color: color('base');
-    padding: 1rem;
+    padding-right: .5rem;
     &:before {
       content: nth($iconB, 2);
     }
