@@ -1,6 +1,9 @@
 @mixin button($background, $border) {
   box-shadow: none;
-  border: solid 2px 1px;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  border-left: solid 1px;
+  border-right: solid 1px;
   border-color: $border;
   text-decoration: none;
   background-color: $background;
@@ -9,12 +12,13 @@
 }
 
 %btn-hover {
-  color: color('accent');
+  background-color: color('accent');
   border-color: #0394be;
 }
 
 .btn-small {
   @include button(color('accent'), #0394be);
+  text-transform: uppercase;
 }
 
 .btn-med {
@@ -27,7 +31,6 @@
 
 .btn-large {
   @include button(transparent, color('secondary'));
-  text-transform: uppercase;
   &:hover {
     @extend %btn-hover;
   }
