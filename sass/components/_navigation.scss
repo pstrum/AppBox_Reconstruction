@@ -9,7 +9,7 @@ header {
   }
 
   h1 {
-    position: absolute;
+    position: fixed;
     margin: 0 auto;
     left: .5em;
     top: .25em;
@@ -25,10 +25,11 @@ header {
   color: white;
   text-shadow: none;
   height: 1em;
-  position: absolute;
+  position: fixed;
   right: 1em;
-  top: 1.25em;
+  top: 1em;
   z-index: 1001;
+  font-size: 1.2em;
 
   @media only screen and (min-width: 50em) {
     display: none;
@@ -67,7 +68,7 @@ header {
   z-index: 1001;
 
     li {
-      height: 2em;
+      height: 100%;
       line-height: auto;
       overflow: visible;
       -webkit-transition: height 0.25s;
@@ -89,7 +90,7 @@ header {
         background-color: transparent;
         border: none;
         height: auto;
-        position: absolute;
+        position: fixed;
         top: -101em;
         bottom: -101em;
         left: 0;
@@ -106,10 +107,10 @@ header {
       height: 0;
       line-height: 0;
       overflow: hidden;
-      -webkit-transition: height 0.25s;
-      -moz-transition: height 0.25s;
-      -o-transition: height 0.25s;
-      transition: height 0.25s;
+      -webkit-transition: height 0.25s ease in;
+      -moz-transition: height 0.25s ease in;
+      -o-transition: height 0.25s ease in;
+      transition: height 0.25s ease in;
 
       @media only screen and (min-width: 50em) {
         overflow: visible;
@@ -118,30 +119,35 @@ header {
     }
 
     .nav-link {
-      color: #999999;
+      color: color('base');
       text-align: center;
-      background-color: #222222;
+      background-color: color('secondary');
       display: inline-block;
-      height: 2em;
+      height: 100%;
       line-height: 1em;
       padding: .5em;
-      border-bottom: 1px solid #333333;
+      border-bottom: 2px solid #333333;
       width: 100%;
+      font-size: 1.8em;
 
       @media only screen and (min-width: 50em) {
-        color: white;
+        color: color('base');
         line-height: 1em;
         padding: .75em;
         height: 2em;
         width: auto;
         border: none;
         background-color: transparent;
+        font-size: 1em;
       }
 
       &:hover {
-      color: #aaa;
+      color: color('accent');
       background-color: #333333;
+
+      @media only screen and (min-width: 50em) {
+        background-color: transparent;
+      }
     }
   }
 }
-
