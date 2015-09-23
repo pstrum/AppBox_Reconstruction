@@ -124,6 +124,7 @@ header {
 
     .nav-link {
       font-family: $primary-font;
+      text-transform: uppercase;
       color: color('base');
       text-align: center;
       background-color: color('secondary');
