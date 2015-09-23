@@ -1,19 +1,44 @@
 form {
-  input  {
-    ::-webkit-input-placeholder {
-      color: red;
-    }
-    :-moz-placeholder: red;
-    ::-moz-placeholder: red; //for newer versions of Firefox
-    :-ms-input-placeholder red;
-    color: red;
-  }
+ ::-webkit-input-placeholder {
+   color: text('placeholder');
+   font-size: $font-large;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: text('placeholder');
+   font-size: $font-large;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: text('placeholder');
+   font-size: $font-large;
+}
+
+:-ms-input-placeholder {
+   color: text('placeholder');
+   font-size: $font-large;
+}
 
   input,
   textarea {
+    padding-bottom: 2em;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid text('placeholder');
+    background: transparent;
+  }
+
+  input {
+    margin-bottom: 2em;
+    width: 20%;
+  }
+
+  textarea {
+    width: 40%;
+    height: 10em;
+    resize: none;
+    margin-bottom: 2em;
   }
 }
