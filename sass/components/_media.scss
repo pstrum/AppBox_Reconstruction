@@ -5,7 +5,7 @@
   font-size: $font-smaller;
   position: relative;
 
-  .review-overlay-text {
+  .review-text-overlay {
     opacity: 0;
     height: 300px;
     width: 270px;
@@ -29,7 +29,7 @@
     padding: 20px;
   }
 
-  &:hover .review-overlay-text {
+  &:hover .review-text-overlay {
     opacity: 1;
     background-color: $hover-other-apps;
   }
