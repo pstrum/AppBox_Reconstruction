@@ -1,0 +1,40 @@
+.flag {
+  width: 15em;
+  height: 19.5em;
+  margin: 10px 10px;
+  padding:  6em 1em 1.5em;
+  text-align: center;
+  color: text('primary');
+  background-color: color('secondary');
+
+  & h2 {
+  margin-top: 6em;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  font-weight: $font-weight-sb;
+  font-size: $font-regular;
+  }
+
+  & p {
+    font-family: $primary-font;
+    font-weight: $font-weight-l;
+    font-size: $font-smaller;
+    line-height: $primary-lh;
+  }
+
+  & span {
+    border-color: border('primary');
+
+  }
+
+  &:hover {
+    background-color: color('base');
+    color: color('secondary');
+
+    span {
+      color: text('icon');
+      border-color: color('accent');
+      margin: 20px;
+    }
+  }
+}

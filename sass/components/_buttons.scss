@@ -1,0 +1,42 @@
+@mixin button($background, $border) {
+  box-shadow: none;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-color: $border;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  background-color: $background;
+  color: color('base');
+  margin: 0 auto;
+}
+
+%btn-hover {
+  background-color: color('accent');
+  border-color: #0394be;
+}
+
+.btn-small {
+  @include button(color('accent'), #0394be);
+  font-size: .75em;
+  padding: .75em 1.5em;
+  text-transform: uppercase;
+}
+
+.btn-med {
+  @include button(transparent, color('secondary'));
+  text-transform: uppercase;
+  &:hover {
+    @extend %btn-hover;
+  }
+}
+
+.btn-large {
+  @include button(transparent, color('secondary'));
+  padding: 1em;
+  &:hover {
+    @extend %btn-hover;
+  }
+}
