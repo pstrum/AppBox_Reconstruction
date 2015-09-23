@@ -1,3 +1,5 @@
+// ************COLORS***************
+
 // MONOCHROMATIC THEME COLOR PALETTE
 
 $theme-colors: (
@@ -99,3 +101,135 @@ $break: 667px;
 
 // GREY STARS AND DISABLED TEXT
 // $disabled-color: #e0e0e0;
+
+
+
+// **************FONTS*************
+
+
+// FONT FAMILIES
+
+$primary-font:      'Roboto', sans-serif;
+$secondary-font:    'Raleway', sans-serif;
+$primary-alt-font:  'Roboto Condensed', sans-serif;
+$logo-font:         'strasuaregular', sans-serif;
+
+// FONT SIZES
+
+$base-font-size:    16px;
+
+$font-smaller:      0.75em;    // 12px
+$font-small:        0.875em;   // 14px
+$font-regular:      0.9375em;  // 15px
+$font-large:        1em;       // 16px
+$blockquote:        1.0625em;  // 17px
+$font-larger:       2em;       // 32px
+$font-hero:         2.5em;     // 40px
+
+// FONT WEIGHTS
+
+$font-weight-l:     300;
+$font-weight-r:     400;
+$font-weight-m:     500;
+$font-weight-sb:    600;
+$font-weight-b:     700;
+
+// LINE HEIGHTS
+
+$primary-lh:        1.67;
+$secondary-lh:      1.375;
+
+
+// GUIDE TO COMP TYPOGRAPHY
+
+// Logo:  -------  Strasua, Regular, 26pt        1.625em
+// Nav:   -------  Roboto, Regular, 14pt         $font-small
+
+// Section 1
+// H1:    -------  Raleway, SemiBold, 40pt       $font-hero
+// P:     -------  Roboto, Regular, 14pt         $font-small
+// Strong:-------  Roboto, Medium, 18pt          1.125em
+// Video Caption:  Roboto, Light, 14pt           $font-small
+
+// Aside
+// H2:    -------  Raleway, SemiBold, 30pt       1.875em
+// P:     -------  Roboto, Light, 16pt           $font-large
+// Google/iOS:---  Roboto, Condensed, 22pt       1.375em
+
+
+// Section 2 Some Amazing Features
+// H1:    -------  Raleway, Light, 32pt          $font-larger
+// H2:    -------  Raleway, SemiBold, 15pt       $font-regular
+// P:     -------  Roboto, Light, 12pt, 1.67(lh) $font-smaller, $primary-lh
+
+// Section 3 Live Conference
+// H1:    -------  Raleway, SemiBold, 28pt       1.75em
+// P:     -------  Roboto, Light, 14pt, 1.7(lh)  $font-small
+// NEW:   -------  Roboto, Medium, 12pt          $font-smaller
+
+// Aside
+// H2:    -------  Roboto, Condensed, 22pt       1.375em
+// A:     -------  Roboto, BoldCondensed, 12pt   $font-smaller
+
+// Section 4 Why Choose AppBox
+// H1:    -------  Raleway, Light, 32pt          $font-larger
+// H2:    -------  Raleway, SemiBold, 15pt       $font-regular
+// P:     -------  Roboto, Light, 12pt, 1.67(lh) $font-smaller, $primary-lh
+
+// Section 5 App Reviews
+// H1:    -------  Raleway, Regular, 32pt        $font-larger
+// P:     -------  Roboto, Light, 16pt           $font-large
+// BLOCKQ:-------  Roboto, Italic, 17pt,1.53(lh) $blockquote
+// STRONG:-------  Roboto, Condensed, 20pt       1.25em
+// FIGCAP:-------  Roboto, Regular, 12pt         $font-smaller
+
+// Section 6 Screenshots
+// H1:    -------  Raleway, Light, 32pt          $font-larger
+
+// Section 7 More Apps by AppBox
+// H1:    -------  Raleway, Light, 32pt          $font-larger
+// H2:    -------  Raleway, SemiBold, 15pt       $font-regular
+// P:     -------  Roboto, Condensed, 18pt       1.125em
+// HOVER: -------  Roboto, Light, 12pt, 2(lh)    $font-smaller
+
+// Section 8 Download Our App
+// H1:    -------  Raleway, Light, 32pt          $font-larger
+// STRONG:-------  Raleway, Medium, 32pt
+// P:     -------  Roboto, Light, 16pt           $font-large
+// Google/iOS:---  Roboto, Condensed, 22pt       1.375em
+// Img:   -------  Strasua, Regular, 26pt        1.625em
+
+// Aside
+// LABEL: -------  Raleway, SemiBold, 20pt       1.25em
+// PLACEHOLDER:--  Roboto, Light, 14pt           $font-small
+// BUTTON:-------  Roboto, Medium, 12pt          $font-smaller
+
+// Section 9 Discounted Pricing
+// H1:    -------  Raleway, Light, 32pt          $font-larger
+// P:     -------  Roboto, Light, 14pt,1.375(lh) $font-small, $secondary-lh
+// TH:    -------  Raleway, SemiBold, 15pt       $font-regular
+// TD-SPAN:------  Roboto, BoldCondensed, 26pt   1.625em
+// TD-Price:-----  Roboto, Light, 10pt           0.625em
+// TD:    -------  Roboto, Light, 14pt           $font-small
+// TFOOT: -------  Roboto, Medium, 12pt          $font-smaller
+
+// Section 10 Team Members
+// H1:    -------  Raleway, Regular, 32pt        $font-larger
+// P:     -------  Roboto, Light, 16pt           $font-large
+// H2:    -------  Roboto, Condensed, 20pt       1.25em
+// FIG-P: -------  Roboto, Regular, 12pt         $font-smaller
+
+// Section 11 AppBox Featured In
+// H1:    -------  Raleway, Light, 32pt          $font-larger
+
+// Section 12 App Support
+// H1:    -------  Raleway, Light, 32pt          $font-larger
+// P:     -------  Roboto, Light, 14pt,1.375(lh) $font-small, $secondary-lh
+// H2:    -------  Raleway, SemiBold, 15pt       $font-regular
+// A:     -------  Roboto, Light, 12pt, 1.83(lh) $font-smaller
+// PLACEHOLDER:--  Roboto, Light, 12pt           $font-smaller
+// BUTTON:-------  Roboto, Medium, 12pt          $font-smaller
+
+// Footer
+// LOGO:  -------  Strasua, Regular, 26pt        1.625em
+// COPYRIGHT:----  Roboto, Light, 12pt           font-smaller

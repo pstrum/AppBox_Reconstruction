@@ -9,3 +9,17 @@
 %background-accent-primary {
   background: linear-gradient(176deg, color(accent) 0%, color(accent) calc(100% - 7vw), color(primary) calc(100% - 7vw), color(primary) 100%);
 }
+
+%figcaption-text {
+  figcaption {
+    h2 {
+      font-family: $primary-alt-font;
+      font-size: 1.25em;
+    }
+    p {
+      font-family: $primary-font;
+      font-size: $font-smaller;
+      margin-top: 0.5em;
+    }
+  }
+}
