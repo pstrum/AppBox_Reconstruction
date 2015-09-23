@@ -5,6 +5,7 @@ header {
 
   @media only screen and (min-width: 50em) {
     display: block;
+    height: 8em;
   }
 
   h1 {
@@ -16,6 +17,7 @@ header {
     @media only screen and (min-width: 50em) {
       display: inline-block;
       left: 10%;
+      top: 1.25em;
     }
   }
 }
@@ -53,7 +55,7 @@ header {
     @include flex-box($wrap: nowrap, $direction: row, $justify: space-between);
     position: absolute;
     width: 45%;
-    padding-top: 1%;
+    padding-top: 3.25%;
     left: auto;
     right: 10%;
   }
