@@ -17,7 +17,7 @@
     color: text('primary');
     font-size: $font-regular;
     line-height: 2;
-    transition: all 0.2s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
   }
 
   & span {
@@ -26,7 +26,7 @@
   }
 
   figcaption{
-    padding: 20px;
+    padding: 1.5em;
   }
 
   &:hover .review-text-overlay {
@@ -37,6 +37,4 @@
   & figure {
     margin: 0;
   }
-
 }
-
