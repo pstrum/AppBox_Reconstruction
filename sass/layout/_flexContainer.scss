@@ -1,3 +1,3 @@
 .l-flex-container {
-  @import flex-box(center, wrap, row, center)
+  @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: center);
 }

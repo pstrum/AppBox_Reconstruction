@@ -6,8 +6,10 @@ html {
   box-sizing: inherit;
 }
 
-li {
+li, a {
   text-decoration: none;
-  list-style: none;
 }
 
+li {
+  list-style: none;
+}
