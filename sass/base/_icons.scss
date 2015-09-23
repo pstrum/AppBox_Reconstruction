@@ -50,13 +50,9 @@ $iconBase:
     border-right: solid 1px;
     border-color: color('secondary');
     border-radius: 50%;
-    padding: 1.5rem;
+    padding: 2.5rem;
     &:before {
       content: nth($iconP, 3);
-    }
-    &:hover {
-      color: color('secondary');
-      border-color: color('accent');
     }
   }
 }

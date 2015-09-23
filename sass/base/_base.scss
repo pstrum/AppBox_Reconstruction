@@ -27,8 +27,9 @@ $border-colors: (
 
 $text-colors: (
   'primary': #ffffff,
-  'secondary': #000000,                            // ('OTHER APPS')
-  'placeholder': mix(white, color('primary'), 30%) // FORM PLACEHOLDER COLOR
+  'secondary': #000000,                             // ('OTHER APPS')
+  'placeholder': mix(white, color('primary'), 30%),  // FORM PLACEHOLDER COLOR
+  'icon': mix(white, color('primary'), 45.5%)       // TEXT ICON
 );
 // EX: $media-color: text('secondary') // #000000
 
@@ -40,9 +41,6 @@ $hover-other-apps: mix(white, color('primary'), 6.5%);// HOVER COLOR FOR 'MORE A
 $divider-color: mix(white, color('primary'), 18.5%);  // DIVIDER DOTS ('WHY CHOOSE APPBOX SECTION')
 $star-color: #ff9c1c;                                 // STARS IN THE APPBOX REVIEWS
 $disabled-color: #e0e0e0;                             // GREY STARS AND DISABLED TEXT
-
-
-
 
 
 //
