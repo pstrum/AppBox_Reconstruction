@@ -1,0 +1,22 @@
+.media {
+  // height: 440px;
+  // width: 270px;
+  border: 1px solid black;
+  margin: 0 2em;
+  background-color: color('base');
+  font-family: $primary-font;
+  font-size: $font-smaller;
+
+  & span {
+    text-decoration: line-through;
+    color: text('placeholder');
+
+  }
+
+
+  & figure {
+    margin: 0;
+  }
+
+}
+
