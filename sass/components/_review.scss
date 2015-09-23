@@ -1,0 +1,12 @@
+.review {
+  blockquote {
+    font-family: $primary-font;
+    font-style: italic;
+    font-size: $blockquote;
+    line-height: 1.53em;
+    text-align: center;
+  }
+  .app-review-media {
+    margin-top: 3em;
+  }
+}
