@@ -17,7 +17,8 @@ $border-colors: (
   'accent': mix(black, #05c3f9, 30.1%),   // BORDER FOR ACCENT (BLUE) BUTTON/LINK
   'profile': mix(black, #05c3f9, 11%),    // QUOTES & TEAM MEMBER IMAGE BORDER
   'base': mix(black, #05c3f9, 35%),       // BORDER FOR WHITE BUTTON/LINK
-  'input': mix(white, #252525, 39%)       // BOTTOM INPUT FIELD BORDER
+  'input': mix(white, #252525, 39%),      // BOTTOM INPUT FIELD BORDER
+  'new': #037fa2
 );
 // EX: $border-color: border('primary'); // #888888
 
@@ -47,6 +48,8 @@ $disabled-color: #e0e0e0;                     // GREY STARS AND DISABLED TEXT
 $input-border-width: 1px;
 $input-border-style: solid;
 
+// BREAK POINT
+$break: 667px;
 
 //
 // COLOR REFERENCE
