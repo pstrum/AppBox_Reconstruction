@@ -1,0 +1,23 @@
+.team-media {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  figcaption {
+    text-align: center;
+    h2, p {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: $primary-alt-font;
+      font-size: 1.25em;
+      margin-top: 1.3em;
+    }
+    p {
+      font-family: $primary-font;
+      font-size: $font-smaller;
+      margin-top: 0.6em;
+    }
+  }
+}
