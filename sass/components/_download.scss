@@ -1,0 +1,64 @@
+@mixin svg-before($image-url, $display: inline-block, $height: 1em) {
+  content: "";
+  display: $display;
+  width: 1em;
+  height: $height;
+  background: $image-url no-repeat;
+  background-size: contain;
+}
+
+
+.download {
+  text-align: center;
+
+  h2 {
+    font-weight: $font-weight-m;
+    font-size: 1.875em;
+    text-transform: uppercase;
+  }
+
+  .arrow {
+    float: right;
+    width: 3.5rem;
+    height: 8rem;
+    vertical-align: middle;
+    background: url('/img/get-it-down-arrow.svg') no-repeat;
+    background-position: 0 1em;
+  }
+
+  p {
+    padding-top: 1em;
+    padding-bottom: 3em;
+    font-family: $primary-font;
+    font-weight: $font-weight-l;
+    font-size: $font-large;
+    vertical-align: middle;
+    em {
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  .btn-large {
+    display: inline-block;            // won't always need to be inline-block
+    min-width: 15rem;                 // won't always need to be this width
+    font-family: $primary-alt-font;   // won't always be roboto
+    font-size: 1.375rem;              // won't always be this size
+    font-weight: $font-weight-r;      // won't always be this weight
+
+    span {
+      padding-right: 0.5em;
+      font-size: 1.5em;
+      vertical-align: -0.125em;
+    }
+  }
+}
+
+.svg-google {
+  line-height: 0;
+  vertical-align: middle;
+  &:before {
+    @include svg-before(url('/img/google-store.svg'), $height: .95em)
+  }
+}
+
