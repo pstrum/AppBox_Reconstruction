@@ -14,4 +14,9 @@
 //   @include flex-box($wrap: wrap, $justify: space-between);
 // }
 
-
+@mixin icon-border($radius: 50%, $color: border('primary')) {
+  border-width: 5px 1px;
+  border-style: solid;
+  border-color: $color;
+  border-radius: $radius;
+}
