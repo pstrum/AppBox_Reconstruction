@@ -1,18 +1,38 @@
 .media {
-  // height: 440px;
-  // width: 270px;
-  border: 1px solid black;
   margin: 0 2em;
   background-color: color('base');
   font-family: $primary-font;
   font-size: $font-smaller;
+  position: relative;
+
+  .review-overlay-text {
+    opacity: 0;
+    height: 300px;
+    width: 270px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 8em 2em;
+    color: text('primary');
+    font-size: $font-regular;
+    line-height: 2;
+    transition: all 0.2s ease-in 0s;
+  }
 
   & span {
     text-decoration: line-through;
     color: text('placeholder');
-
   }
 
+  figcaption{
+    padding: 20px;
+  }
+
+  &:hover .review-overlay-text {
+    opacity: 1;
+    background-color: $hover-other-apps;
+  }
 
   & figure {
     margin: 0;
