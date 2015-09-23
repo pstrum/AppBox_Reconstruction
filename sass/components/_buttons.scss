@@ -20,6 +20,8 @@
 
 .btn-small {
   @include button(color('accent'), #0394be);
+  font-size: .75em;
+  padding: .75em 1.5em;
   text-transform: uppercase;
 }
 
