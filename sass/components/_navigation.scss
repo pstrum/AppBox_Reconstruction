@@ -9,6 +9,7 @@ header {
   }
 
   h1 {
+    font-family: $logo-font;
     position: absolute;
     margin: 0 auto;
     left: .5em;
@@ -28,9 +29,10 @@ header {
   height: 1em;
   position: fixed;
   right: 1em;
-  top: 1em;
+  top: 1.25em;
   z-index: 1001;
-  font-size: 1.2em;
+  font-family: $primary-font;
+  font-size: em(14);
 
   @media only screen and (min-width: 50em) {
     display: none;
@@ -121,6 +123,7 @@ header {
     }
 
     .nav-link {
+      font-family: $primary-font;
       color: color('base');
       text-align: center;
       background-color: color('secondary');
@@ -130,7 +133,7 @@ header {
       padding: .5em;
       border-bottom: 2px solid #333333;
       width: 100%;
-      font-size: 1.8em;
+      font-size: em(24);
 
       @media only screen and (min-width: 50em) {
         color: color('base');
@@ -140,7 +143,7 @@ header {
         width: auto;
         border: none;
         background-color: transparent;
-        font-size: 1em;
+        font-size: em(14);
       }
 
       &:hover {
