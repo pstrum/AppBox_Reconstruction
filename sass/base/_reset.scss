@@ -10,10 +10,18 @@ html {
   box-sizing: inherit;
 }
 
+ul {
+  padding: 0;
+}
+
 li, a {
   text-decoration: none;
 }
 
 li {
   list-style: none;
+}
+
+figure {
+  margin: 0;
 }
