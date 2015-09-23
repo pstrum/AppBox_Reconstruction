@@ -24,10 +24,11 @@
 
 .bundle {
   @extend %table;
+  min-width: 20em;
   @include bundle-theme(text('primary'), border('primary'));
 
   th {
-    padding: 2.2rem 6rem;
+    padding: 2.2rem 4rem;
     font-weight: $font-weight-sb;
   }
 
@@ -45,7 +46,7 @@
   .bundle-plan {
     @include icon-border;
     display: inline-block;
-    padding: 1.2rem 1.5rem;
+    padding: 1.2rem 1.6rem;
     font-size: 0.625em;
     color: text('placeholder');
     background-color: color('primary');
@@ -60,6 +61,18 @@
 
   .bundle-list {
     padding-top: 2.5em;
+  }
+
+  tfoot td {
+    padding: 3em 0;
+  }
+
+  .btn-small {
+    padding: 1em 3em;
+    font-size: $font-smaller;
+    font-weight: $font-weight-m;
+    background-color: transparent;
+    border-color: border('primary');
   }
 
   &:hover {
@@ -80,6 +93,10 @@
       background-image: linear-gradient(color('accent') 49%,
                     color('primary') 50%,
                     color('primary') 100%);
+    }
+    .btn-small {
+      background-color: color('accent');
+      border-color: border('accent');
     }
   }
 }
