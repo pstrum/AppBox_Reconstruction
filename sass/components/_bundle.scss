@@ -1,38 +1,85 @@
-.bundle {
+@mixin background-horiz-line($background-color: color('primary'), $line-color: border('primary')) {
+  background-image: linear-gradient($background-color 49%,
+                    $line-color 49%,
+                    $line-color 50%,
+                    $background-color 50%,
+                    $background-color 100%);
+}
+
+@mixin bundle-theme($font-color, $border-color) {
+  color: $font-color;
+  border-color: $border-color;
+  background-color: transparent;
+}
+
+%table {
   font-family: $secondary-font;
   font-size: $font-regular;
+  font-weight: $font-weight-l;
   text-align: center;
-  color: text('primary');
   border-collapse: collapse;
-  border: 1px solid border('primary');
+  border-width: $input-border-width;
+  border-style: $input-border-style;
+}
+
+.bundle {
+  @extend %table;
+  @include bundle-theme(text('primary'), border('primary'));
 
   th {
-    padding: 3em 4em 6em;
+    padding: 2.2rem 6rem;
     font-weight: $font-weight-sb;
-    border-bottom: 1px solid border('primary');
   }
 
-  .plan {
+  tbody tr:first-child {
+    display: block;
+    @include background-horiz-line($line-color: border('primary'));
+  }
+
+  td {
+    padding: .667rem;
+    font-family: $primary-font;
+    font-size: $font-small;
+  }
+
+  .bundle-plan {
     @include icon-border;
     display: inline-block;
-    position: relative;
-    padding: 2em 2.6em;
-    font-family: $primary-font;
-    font-weight: $font-weight-l;
+    padding: 1.2rem 1.5rem;
     font-size: 0.625em;
     color: text('placeholder');
-    bottom: 5.5em;
     background-color: color('primary');
+
     & span {
       font-family: $primary-alt-font;
       font-weight: $font-weight-b;
       font-size: 1.625rem;
       color: color('accent');
     }
-
   }
-}
 
-.plan {
+  .bundle-list {
+    padding-top: 2.5em;
+  }
 
+  &:hover {
+    th {
+      background-color: color('accent');
+      border-color: color('accent');
+    }
+    .bundle-plan {
+      @include icon-border($color: color('base'));
+      color: text('primary');
+      background-color: color('accent');
+
+      & span {
+        color: text('primary');
+      }
+    }
+    tbody tr:first-child {
+      background-image: linear-gradient(color('accent') 49%,
+                    color('primary') 50%,
+                    color('primary') 100%);
+    }
+  }
 }
