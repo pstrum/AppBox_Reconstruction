@@ -1,0 +1,19 @@
+form {
+  input  {
+    ::-webkit-input-placeholder {
+      color: red;
+    }
+    :-moz-placeholder: red;
+    ::-moz-placeholder: red; //for newer versions of Firefox
+    :-ms-input-placeholder red;
+    color: red;
+  }
+
+  input,
+  textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid orange;
+  }
+}
