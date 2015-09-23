@@ -1,0 +1,38 @@
+.bundle {
+  font-family: $secondary-font;
+  font-size: $font-regular;
+  text-align: center;
+  color: text('primary');
+  border-collapse: collapse;
+  border: 1px solid border('primary');
+
+  th {
+    padding: 3em 4em 6em;
+    font-weight: $font-weight-sb;
+    border-bottom: 1px solid border('primary');
+  }
+
+  .plan {
+    @include icon-border;
+    display: inline-block;
+    position: relative;
+    padding: 2em 2.6em;
+    font-family: $primary-font;
+    font-weight: $font-weight-l;
+    font-size: 0.625em;
+    color: text('placeholder');
+    bottom: 5.5em;
+    background-color: color('primary');
+    & span {
+      font-family: $primary-alt-font;
+      font-weight: $font-weight-b;
+      font-size: 1.625rem;
+      color: color('accent');
+    }
+
+  }
+}
+
+.plan {
+
+}
