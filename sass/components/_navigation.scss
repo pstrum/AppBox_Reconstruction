@@ -1,6 +1,5 @@
 header {
   width: 100%;
-  position: fixed;
   height: 4em;
   top: 0;
 
@@ -9,7 +8,7 @@ header {
   }
 
   h1 {
-    position: fixed;
+    position: absolute;
     margin: 0 auto;
     left: .5em;
     top: .25em;
@@ -52,6 +51,7 @@ header {
 
   @media only screen and (min-width: 50em) {
     @include flex-box($wrap: nowrap, $direction: row, $justify: space-between);
+    position: absolute;
     width: 45%;
     padding-top: 1%;
     left: auto;
