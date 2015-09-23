@@ -38,3 +38,17 @@
     }
   }
 }
+
+.team-flag {
+  @extend %figcaption-text;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  figcaption {
+    text-align: center;
+    h2 {
+      margin-top: 1.3em;
+    }
+  }
+}
