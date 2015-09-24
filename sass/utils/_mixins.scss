@@ -20,3 +20,10 @@
   border-color: $color;
   border-radius: $radius;
 }
+
+@mixin logo-underline($size: null) {
+  background-image: url('/img/logo-path.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: $size;
+}
