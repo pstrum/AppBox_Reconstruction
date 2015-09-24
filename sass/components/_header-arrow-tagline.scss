@@ -1,0 +1,15 @@
+[data-section="team-members"] {
+  h1 {
+    font-family: $secondary-font;
+    font-size: $font-larger;
+    font-weight: $font-weight-r;
+  }
+  > p {
+    padding: 0 3% 3.6em;
+    font-family: $primary-font;
+    font-size: $font-large;
+    font-weight: $font-weight-l;
+    background: url('/img/down-arrow-team.svg') no-repeat;
+    background-position: right .3em;
+  }
+}
