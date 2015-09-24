@@ -1,0 +1,7 @@
+.header-underline {
+  @include header-underline;
+
+  [data-section="more-apps"] & {
+    @include header-underline($text-color: text(primary), $underline-color: color(base));
+  }
+}

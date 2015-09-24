@@ -79,23 +79,22 @@
     padding: 5% 0 10% 0;
   }
 
-  h2 {
-    @media only screen and (min-width: 50em) {
-      height: 2em;
-      flex-basis: 60%;
-    }
-  }
+  // h2 {
+  //   @media only screen and (min-width: 50em) {
+  //     // flex-basis: 60%;
+  //   }
+  // }
 
-  p {
-    @media only screen and (min-width: 50em) {
-      padding-bottom: 5%;
-    }
-  }
+  // p {
+  //   @media only screen and (min-width: 50em) {
+  //     // padding-bottom: 5%;
+  //   }
+  // }
 
-  li {
-    padding: 2%;
-    @media only screen and (min-width: 50em) {
-      padding: 2%;
-    }
-  }
+  // li {
+  //   padding: 2%;
+  //   // @media only screen and (min-width: 50em) {
+  //   //   padding: 2%;
+  //   // }
+  // }
 }
