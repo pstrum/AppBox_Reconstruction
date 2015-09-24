@@ -1,3 +1,21 @@
 [data-section="appbox-featured"] {
   background: linear-gradient(176deg, color(secondary) 0%, color(secondary) calc(100% - 7vw), color(primary) calc(100% - 7vw), color(primary) 100%);
+  padding: 8% 5%;
+
+  @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: space-around);
+  text-align: center;
+
+  h1 {
+    order: 1;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  ul {
+    order: 2;
+    margin-bottom: 5%;
+    li {
+      margin: 3%;
+    }
+  }
 }

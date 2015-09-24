@@ -1,4 +1,30 @@
 footer {
   @extend %background-accent;
+  text-align: center;
+
+  p {
+    font-family: $primary-font;
+    font-weight: $font-weight-l;
+    font-size: $font-smaller;
+    margin: 0;
+  }
+
+  .logo {
+    font-family: $logo-font;
+    font-size: em(26);
+    padding: 1% 0;
+  }
+
+  ul {
+    display: inline-flex;
+    padding: 2% 0;
+
+    li {
+      margin: .75em;
+      @media only screen and (min-width: 50em) {
+        margin: .5em;
+      }
+    }
+  }
 }
 
