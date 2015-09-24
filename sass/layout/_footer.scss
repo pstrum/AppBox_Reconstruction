@@ -7,12 +7,15 @@ footer {
     font-weight: $font-weight-l;
     font-size: $font-smaller;
     margin: 0;
+    padding: 2em;
+
   }
 
   .logo {
     font-family: $logo-font;
     font-size: em(26);
-    padding: 1% 0;
+    padding: 0;
+    @include logo-underline(7.1%, url('/img/logo-path-white.svg'));
   }
 
   ul {

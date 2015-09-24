@@ -14,7 +14,7 @@ header {
     margin: 0 auto;
     left: .5em;
     top: .25em;
-    @include logo-underline(100%);
+    @include logo-underline(100%, url('/img/logo-path.svg'));
 
     @media only screen and (min-width: 50em) {
       display: inline-block;
