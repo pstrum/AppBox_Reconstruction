@@ -1,5 +1,7 @@
 [data-section="more-apps"] {
   @extend %background-accent-primary;
 
-  // color: color('primary');
+  li {
+    margin-bottom: 2em;
+  }
 }

@@ -34,8 +34,8 @@
   }
 }
 
-@mixin logo-underline($size: null) {
-  background-image: url('/img/logo-path.svg');
+@mixin logo-underline($size: null, $color: null) {
+  background-image: $color;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: $size;
