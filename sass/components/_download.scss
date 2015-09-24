@@ -33,10 +33,10 @@
     vertical-align: middle;
     &:before {
       content: "";
-      display: $display;
+      display: inline-block;
       width: 1em;
-      height: $height;
-      background: $image-url no-repeat;
+      height: 0.95em;
+      background: url('/img/google-store.svg') no-repeat;
       background-size: contain;
     }
   }
