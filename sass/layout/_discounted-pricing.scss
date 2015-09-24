@@ -1,27 +1,41 @@
 [data-section="discounted-pricing"] {
   @extend %background-primary-accent;
-  @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: space-around);
-  padding: 5% 10% 15% 10%;
+  @include flex-box($align: center, $direction: column, $justify: center);
+  padding: 4em;
+  text-align: center;
+  @media only screen and (min-width: 50em) {
+    @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: space-around);
+    padding: 5% 10% 15% 10%;
+  }
 
   h1 {
-    order: 1;
-    flex-basis: 100%;
-    text-align: center;
-    margin: 0 0 2% 0;
+    margin-bottom: 1em;
+    @media only screen and (min-width: 50em) {
+      order: 1;
+      flex-basis: 100%;
+      text-align: center;
+      margin: 0 0 2% 0;
+    }
   }
 
   p {
-    order: 2;
-    flex-basis: 100%;
-    padding: 2% 20%;
-    margin: 0 0 2% 0;
-    text-align: center;
+    margin: 1em;
+    @media only screen and (min-width: 50em) {
+      order: 2;
+      flex-basis: 100%;
+      padding: 2% 20%;
+      margin: 0 0 2% 0;
+      text-align: center;
+    }
   }
 
   table {
-    order: 3;
-    flex-basis: 20%;
-    margin: 1%;
-  }
+    margin: 1em;
 
+    @media only screen and (min-width: 50em) {
+      order: 3;
+      flex-basis: 20%;
+      margin: 1%;
+    }
+  }
 }

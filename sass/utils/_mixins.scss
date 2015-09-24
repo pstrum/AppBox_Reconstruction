@@ -21,6 +21,19 @@
   border-radius: $radius;
 }
 
+@mixin header-underline($text-color: text(primary), $underline-color: border(primary)) {
+  font-size: $font-larger;
+  font-weight: $font-weight-l;
+  &:after {
+    content: "";
+    display: block;
+    margin: 1em auto 0;
+    width: 2.618em;
+    height: .15em;
+    background-color: $underline-color;
+  }
+}
+
 @mixin logo-underline($size: null) {
   background-image: url('/img/logo-path.svg');
   background-repeat: no-repeat;
