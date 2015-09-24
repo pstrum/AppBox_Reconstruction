@@ -2,12 +2,16 @@ footer {
   text-align: center;
 
   p {
+    font-family: $primary-font;
+    font-weight: $font-weight-l;
+    font-size: $font-smaller;
     margin: 0;
   }
 
   .logo {
-    padding-top: 2%;
-    padding-bottom: 0;
+    font-family: $logo-font;
+    font-size: em(26);
+    padding: 1% 0;
   }
 
   ul {
