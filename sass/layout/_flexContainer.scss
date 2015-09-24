@@ -1,3 +1,7 @@
 .l-flex-container {
   @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: center);
 }
+
+.l-flex-container-app-support {
+    @include flex-box($align: flex-start, $wrap: wrap, $direction: collumn, $justify: center);
+}
