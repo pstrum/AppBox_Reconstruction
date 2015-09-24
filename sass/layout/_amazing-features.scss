@@ -1,3 +1,13 @@
 [data-section="amazing-features"] {
   background: color(secondary);
+  @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: space-around);
+  padding: 4%;
+
+  h1 {
+    padding-bottom: 5%;
+  }
+
+  .flag {
+    margin: 5% 0;
+  }
 }
