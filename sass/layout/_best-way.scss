@@ -1,6 +1,75 @@
 [data-div="best-way"] {
   background: linear-gradient(176deg, $hero-background 0%, $hero-background calc(100% - 7vw), color(primary) calc(100% - 7vw), color(primary) 100%);
+  text-align: center;
+  padding: 2em 1em 4em;
+
+  div {
+
+    @media only screen and (min-width: $break) {
+      margin-right: 10em;
+      width: 40%;
+    }
+  }
+
+  @media only screen and (min-width: $break) {
+    text-align: left;
+  }
+
+  h1 {
+    margin: 3em 0 4em;
+    font-family: $secondary-font;
+    font-size: $font-hero;
+    font-weight: $font-weight-sb;
+
+    @media only screen and (min-width: $break) {
+      margin: 1em 0;
+    }
+  }
+
+  p {
+
+    font-family: $primary-font;
+    font-size: $font-large;
+
+     @media only screen and (min-width: $break) {
+      margin: 2em 0;
+      width: 60%;
+    }
+
+    strong {
+      font-size: 1.125em;
+      font-weight: $font-weight-b;
+    }
+  }
+
+  video {
+    margin: 2em 0;
+  }
+
+  & img  {
+    display: none;
+
+    @media only screen and (min-width: $break) {
+      display: inline-block;
+      overflow: none;
+    }
+  }
+
+  figure {
+    display: inline-block;
+    position: relative;
+    max-width: 300px;
+  }
+
+  figcaption {
+     @media only screen and (min-width: $break) {
+      position: absolute;
+      top: 50%;
+      right: -12em;
+    }
+  }
 }
+
 
 [data-aside="get-free"] {
   background: linear-gradient(176deg, color(primary) 0%, color(primary) calc(100% - 7vw), color(secondary) calc(100% - 7vw), color(secondary) 100%);
