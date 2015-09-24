@@ -6,13 +6,15 @@
   div {
 
     @media only screen and (min-width: $break) {
-      margin-right: 10em;
-      width: 40%;
+      margin-right: 8%;
+      width: 45%;
     }
   }
 
   @media only screen and (min-width: $break) {
+    @include flex-box($align: flex-start, $wrap: wrap, $direction: row, $justify: center);
     text-align: left;
+    padding: 5% 2% 0%;
   }
 
   h1 {
@@ -53,6 +55,7 @@
     @media only screen and (min-width: $break) {
       display: inline-block;
       overflow: none;
+      margin-top: 8%;
     }
   }
 
@@ -77,25 +80,6 @@
   padding: 3em;
   @media only screen and (min-width: 50em) {
     @include flex-box($align: center, $wrap: wrap, $direction: column, $justify: center);
-    padding: 5% 0 10% 0;
+    padding: 5% 0 15% 0;
   }
-
-  // h2 {
-  //   @media only screen and (min-width: 50em) {
-  //     // flex-basis: 60%;
-  //   }
-  // }
-
-  // p {
-  //   @media only screen and (min-width: 50em) {
-  //     // padding-bottom: 5%;
-  //   }
-  // }
-
-  // li {
-  //   padding: 2%;
-  //   // @media only screen and (min-width: 50em) {
-  //   //   padding: 2%;
-  //   // }
-  // }
 }
