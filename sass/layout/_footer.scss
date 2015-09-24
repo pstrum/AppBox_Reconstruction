@@ -1,8 +1,16 @@
 footer {
   @extend %background-accent;
-  text-align: center;
+  position: relative;
+
+  .to-top {
+    position: absolute;
+    text-align: left;
+    margin-left: 2%;
+    top: -1.8em;
+  }
 
   p {
+    text-align: center;
     font-family: $primary-font;
     font-weight: $font-weight-l;
     font-size: $font-smaller;
@@ -19,10 +27,12 @@ footer {
   }
 
   ul {
-    display: inline-flex;
     padding: 2% 0;
+    margin-bottom: 0;
+    text-align: center;
 
     li {
+      display: inline-block;
       margin: .75em;
       @media only screen and (min-width: 50em) {
         margin: .5em;
