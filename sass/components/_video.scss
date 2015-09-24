@@ -1,0 +1,14 @@
+[data-div="best-way"] {
+  video {
+    border: 2px solid color('base');
+    &:hover {
+      border-color: color(accent);
+      cursor: pointer;
+    }
+  }
+  figcaption {
+    font-family: $primary-font;
+    font-size: $font-small;
+    font-weight: $font-weight-l;
+  }
+}

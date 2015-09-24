@@ -1,11 +1,11 @@
 @mixin button($background, $border) {
   box-shadow: none;
-  border-top: solid 2px;
-  border-bottom: solid 2px;
+  border-top: solid 3px;
+  border-bottom: solid 3px;
   border-left: solid 1px;
   border-right: solid 1px;
   border-color: $border;
-  border-radius: 25px;
+  border-radius: 3rem;
   text-decoration: none;
   text-align: center;
   background-color: $background;
@@ -21,7 +21,7 @@
 .btn-small {
   @include button(color('accent'), #0394be);
   font-size: .75em;
-  padding: .75em 1.5em;
+  padding: .4em 1.2em;
   text-transform: uppercase;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .btn-large {
-  @include button(transparent, color('secondary'));
+  @include button(transparent, border('primary'));
   padding: 1em;
   &:hover {
     @extend %btn-hover;

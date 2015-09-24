@@ -26,14 +26,14 @@ $iconPrimary:
 (bubble 1.25em 1.25rem "\e60f");
 
 $iconBase:
-(dribbble .75em "\e602")
-(google-plus .75em "\e603")
-(twitter .75em "\e604")
-(facebook .75em "\e605")
-(pinterest .75em "\e606")
+(dribbble 1.25em "\e602")
+(google-plus 1.25em "\e603")
+(twitter 1.25em "\e604")
+(facebook 1.25em "\e605")
+(pinterest 1.25em "\e606")
 (search 1em "\e610")
-(play4 .75em "\e614")
-(behance .75em "\e60b")
+(play4 1.25em "\e614")
+(behance 1.25em "\e60b")
 (apple2 1.25em "\e615")
 (android 1.25em "\e616");
 
@@ -64,7 +64,6 @@ $iconBase:
     font-size: nth($iconB, 2);
     background-color: transparent;
     color: color('base');
-    padding-right: .5rem;
     &:before {
       content: nth($iconB, 3);
     }

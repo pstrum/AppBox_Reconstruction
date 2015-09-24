@@ -3,10 +3,10 @@
 // MONOCHROMATIC THEME COLOR PALETTE
 
 $theme-colors: (
-  'primary': #252525,   //Dark Grey
-  'accent': #05c3f9,    //Sky Blue
-  'secondary': #383838, //Light Grey
-  'base': #ffffff,      //White ------ DOCUMENT BACKGROUND
+  primary: #252525,   //Dark Grey
+  accent: #05c3f9,    //Sky Blue
+  secondary: #383838, //Light Grey
+  base: #ffffff,      //White ------ DOCUMENT BACKGROUND
 );
 // EX: $button-color: color('primary'); // #252525
 
@@ -15,11 +15,12 @@ $theme-colors: (
 // BORDER COLORS
 
 $border-colors: (
-  'primary': mix(white, #252525, 45.5%),  // PRIMARY (GREY) BUTTON/LINK BORDER & SECTION H1 UNDERLINE
+  'primary': mix(white, map-get($theme-colors, primary), 45.5%),  // PRIMARY (GREY) BUTTON/LINK BORDER & SECTION H1 UNDERLINE
   'accent': mix(black, #05c3f9, 30.1%),   // BORDER FOR ACCENT (BLUE) BUTTON/LINK
   'profile': mix(black, #05c3f9, 11%),    // QUOTES & TEAM MEMBER IMAGE BORDER
   'base': mix(black, #05c3f9, 35%),       // BORDER FOR WHITE BUTTON/LINK
-  'input': mix(white, #252525, 39%)       // BOTTOM INPUT FIELD BORDER
+  'input': mix(white, #252525, 39%),      // BOTTOM INPUT FIELD BORDER
+  'new': #037fa2
 );
 // EX: $border-color: border('primary'); // #888888
 
@@ -49,6 +50,8 @@ $disabled-color: #e0e0e0;                     // GREY STARS AND DISABLED TEXT
 $input-border-width: 1px;
 $input-border-style: solid;
 
+// BREAK POINT
+$break: 667px;
 
 //
 // COLOR REFERENCE
@@ -115,13 +118,13 @@ $logo-font:         'strasuaregular', sans-serif;
 
 $base-font-size:    16px;
 
-$font-smaller:      0.75em;    // 12px
-$font-small:        0.875em;   // 14px
-$font-regular:      0.9375em;  // 15px
-$font-large:        1em;       // 16px
+$font-smaller:      0.75rem;    // 12px
+$font-small:        0.875rem;   // 14px
+$font-regular:      0.9375rem;  // 15px
+$font-large:        1rem;       // 16px
 $blockquote:        1.0625em;  // 17px
-$font-larger:       2em;       // 32px
-$font-hero:         2.5em;     // 40px
+$font-larger:       2rem;       // 32px
+$font-hero:         2.5rem;     // 40px
 
 // FONT WEIGHTS
 

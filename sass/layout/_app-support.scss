@@ -1,3 +1,89 @@
 [data-section="app-support"] {
   @extend %background-primary-accent;
+  text-align: center;
+  padding: 0 10% 3em;
+  @media screen and (min-width: $break) {
+    padding: 5% 10% 10% 10%;
+  }
+
+  h1 {
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+  }
+
+  ul {
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  li {
+    margin: 4em 0;
+  }
+
+  h2 {
+    margin: 1em 0;
+  }
+
+  @media screen and (min-width: ($break)) {
+    .css-flag {
+      margin: 0;
+      display: table;
+      width: 100%;
+    }
+
+    .css-flag__image,
+    .css-flag__body {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .css-flag__body {
+      text-align: left;
+      width: 60%;
+    }
+  }
+
+  input {
+    width: 100%;
+
+     @media screen and (min-width: ($break)) {
+      text-align: left;
+      width: 45%;
+      margin: 0 1%;
+    }
+  }
+
+  textarea {
+    width: 100%;
+
+     @media screen and (min-width: ($break)) {
+      width: 92%;
+      margin: 0 1% 2em;
+    }
+  }
+
+  form {
+    padding: 2em;
+
+      @media screen and (min-width: ($break)) {
+      width: 70%;
+      text-align: left;
+      padding-left: 15%;
+    }
+  }
+
+  form p {
+    margin-bottom: 2em;
+    width: 100%;
+
+    @media screen and (min-width: ($break)) {
+    display: inline-block;
+    width: 10px0%;
+    padding-bottom: 2em;
+    }
+  }
+
+  button {
+    float: left
+  }
 }

@@ -1,31 +1,35 @@
 form {
  ::-webkit-input-placeholder {
+  padding-bottom: 1em;
    color: text('placeholder');
-   font-size: $font-large;
+   font-size: $font-small;
 
 }
 
 :-moz-placeholder { /* Firefox 18- */
    color: text('placeholder');
-   font-size: $font-large;
+   font-size: $font-small;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
    color: text('placeholder');
-   font-size: $font-large;
+   font-size: $font-small;
 }
 
 :-ms-input-placeholder {
    color: text('placeholder');
-   font-size: $font-large;
+   font-size: $font-small;
 }
 
   input,
   textarea {
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+    color: text(primary);
+    font-size: $font-large;
     border-top: none;
     border-left: none;
     border-right: none;
+    border-radius: 0;
     border-bottom: 1px solid text('placeholder');
     background: transparent;
   }

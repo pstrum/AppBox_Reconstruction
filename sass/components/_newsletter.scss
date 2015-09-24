@@ -1,0 +1,25 @@
+.newsletter {
+  display: inline-block;
+  border-bottom: 1px solid border(input);
+
+  label {
+    display: block;
+    padding-bottom: 1em;
+    font-family: $secondary-font;
+    font-weight: $font-weight-sb;
+    font-size: 1.25rem;
+  }
+
+  input {
+    width: 22em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  .btn-small {
+    font-family: $primary-font;
+    font-weight: $font-weight-m;
+    font-size: $font-smaller;
+  }
+}

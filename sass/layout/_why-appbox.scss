@@ -1,3 +1,106 @@
+%list-item-styles {
+  display: inline-block;
+  margin: 2em;
+  @media only screen and (min-width: 50em) {
+    @include flex-box($align: center, $direction: row, $justify: space-between);
+    max-width: 100%;
+    margin: 5% 0;
+  }
+  .why-icon-wrapper {
+    display: inline;
+    margin: 0 auto;
+  }
+
+  .why-item-wrapper {
+    margin: 0 auto;
+    h2 {
+      margin: 1em 0 .5em 0;
+      padding: 0 2em;
+      @media only screen and (min-width: 50em) {
+        padding: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 [data-section="why-appbox"] {
   @extend %background-primary-accent;
+  @include flex-box($align: center, $wrap: wrap, $direction: column, $justify: center);
+
+  @media only screen and (min-width: 50em) {
+    @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: center);
+    width: 100%;
+    align-content: center;
+    padding: 5% 5% 10% 5%;
+  }
+
+  h1 {
+    margin-top: 2em;
+    text-align: center;
+    @media only screen and (min-width: 50em) {
+      margin-top: 0;
+      padding-bottom: 5%;
+      order: 1;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  img {
+    display: none;
+    @media only screen and (min-width: 50em) {
+      display: flex;
+      order: 3;
+      width: 30%;
+      flex-basis: 30%;
+    }
+  }
+
+  .why-1 {
+    text-align: center;
+    margin: 1em 0 0 0;
+    @media only screen and (min-width: 50em) {
+      margin: 0;
+      text-align: right;
+      order: 2;
+      flex-basis: 30%;
+    }
+
+    li {
+      @extend %list-item-styles;
+
+      .why-icon-wrapper {
+        order: 2;
+      }
+      .why-item-wrapper {
+        order: 1;
+        padding-right: 5%;
+      }
+    }
+  }
+
+  .why-2 {
+    text-align: center;
+    margin: 0 0 2em 0;
+    @media only screen and (min-width: 50em) {
+      text-align: left;
+      order: 4;
+      flex-basis: 30%;
+      margin: 0;
+    }
+
+    li {
+      @extend %list-item-styles;
+
+      .why-icon-wrapper {
+        order: 1;
+      }
+      .why-item-wrapper {
+        order: 2;
+        padding-left: 5%;
+      }
+    }
+  }
 }
+
