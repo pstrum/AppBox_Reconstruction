@@ -5,7 +5,14 @@
                                       color(primary) calc(50% + 7vw),
                                       color(secondary) calc(50% + 7vw),
                                       color(secondary) 100%);
-  img {
-  @include order(1);
+  & img  {
+    display: none;
+
+    @media only screen and (min-width: $break) {
+      // @include order(1);
+      display: inline-block;
+      overflow: none;
+    }
   }
 }
+
