@@ -1,17 +1,13 @@
 %download-app {
   p {
-    padding-top: 1em;
+    display: inline-block;
     font-family: $primary-font;
     font-weight: $font-weight-l;
     font-size: $font-large;
-    vertical-align: middle;
     em {
       font-style: normal;
       text-transform: uppercase;
     }
-  }
-  ul {
-    @include flex-box($justify: space-between);
   }
   li {
     display: inline-block;
@@ -52,14 +48,10 @@
     font-size: 1.875em;
     text-transform: uppercase;
   }
-
-  .arrow {
-    float: right;
-    width: 3.5rem;
-    height: 8rem;
-    vertical-align: middle;
+  p {
+    padding: .5em 5% 3.5em;
     background: url('/img/get-it-down-arrow.svg') no-repeat;
-    background-position: 0 1em;
+    background-position: right;
   }
 }
 
@@ -81,9 +73,6 @@
       height: .2em;
       background-color: border(primary);
     }
-  }
-  p {
-    padding-bottom: 2em;
   }
   .arrow {
     display: inline-block;
