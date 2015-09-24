@@ -68,7 +68,7 @@
 .download-left {
   @extend %download-app;
   h1 {
-    margin-bottom: 2em;
+    display: inline-block;
     font-weight: $font-weight-l;
     strong {
       font-weight: $font-weight-m;
