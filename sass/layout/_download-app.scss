@@ -1,6 +1,6 @@
 [data-section="download-app"] {
   // height: 30em;
-  @include flex-box;
+  // @include flex-box($wrap: wrap, $direction: column);
   background: linear-gradient(185deg, color(primary) 0%,
                                       color(primary) calc(50% + 7vw),
                                       color(secondary) calc(50% + 7vw),
@@ -9,7 +9,6 @@
     display: none;
 
     @media only screen and (min-width: $break) {
-      // @include order(1);
       display: inline-block;
       overflow: none;
     }

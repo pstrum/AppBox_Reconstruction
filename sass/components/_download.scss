@@ -68,10 +68,16 @@
   @extend %download-app;
   h1 {
     display: inline-block;
+    padding-right: 1.7em;
+    padding-bottom: 1em;
     font-weight: $font-weight-l;
+    background: url('/img/down-arrow-download.svg') no-repeat;
+    background-position: right .6em;
+
     strong {
       font-weight: $font-weight-m;
     }
+
     &:after {
       content: "";
       display: block;
@@ -80,14 +86,5 @@
       height: .2em;
       background-color: border(primary);
     }
-  }
-  .arrow {
-    display: inline-block;
-    width: 2rem;
-    height: 5rem;
-    margin-left: 1em;
-    vertical-align: text-top;
-    background: url('/img/down-arrow-download.svg') no-repeat;
-    background-position: 0 .5em;
   }
 }
