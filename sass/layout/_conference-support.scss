@@ -20,11 +20,12 @@
   @media only screen and (min-width: 50em) {
     @include flex-box($align: center, $direction: row, $justify: space-between);
     max-width: 100%;
-    padding: 5% 8%;
+    padding: 8% 8% 2% 8%;
 
     .conference-text-wrapper {
       order: 1;
       max-width: 45%;
+      padding-bottom: 8%;
 
       .btn-small {
         border-top: 3px solid border('new');
