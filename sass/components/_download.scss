@@ -9,8 +9,15 @@
       text-transform: uppercase;
     }
   }
+  ul {
+    display: inline-block;
+    @media only screen and (min-width: 50em) {
+      @include flex-box($justify: space-between);
+    }
+  }
   li {
     display: inline-block;
+    padding: 2%;
   }
   .btn-large {
     display: inline-block;
