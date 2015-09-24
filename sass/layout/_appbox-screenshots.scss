@@ -1,4 +1,14 @@
 [data-section="appbox-screenshots"] {
   // height: 30em;
   background: linear-gradient(185deg, color(primary) 0%, color(primary) calc(30% + 7vw), color(secondary) calc(30% + 7vw), color(secondary) 100%);
+
+  ul {
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 2em;
+  }
+
 }

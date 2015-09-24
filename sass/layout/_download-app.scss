@@ -1,4 +1,14 @@
 [data-section="download-app"] {
   // height: 30em;
   background: linear-gradient(185deg, color(primary) 0%, color(primary) calc(50% + 7vw), color(secondary) calc(50% + 7vw), color(secondary) 100%);
+
+  & img  {
+    display: none;
+
+    @media only screen and (min-width: $break) {
+      display: inline-block;
+      overflow: none;
+    }
+  }
 }
+
