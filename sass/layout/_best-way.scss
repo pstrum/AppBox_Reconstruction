@@ -73,19 +73,29 @@
 
 [data-aside="get-free"] {
   background: linear-gradient(176deg, color(primary) 0%, color(primary) calc(100% - 7vw), color(secondary) calc(100% - 7vw), color(secondary) 100%);
-  @include flex-box($align: center, $wrap: wrap, $direction: column, $justify: center);
-  padding: 5% 0 10% 0;
+  padding: 3em;
+  @media only screen and (min-width: 50em) {
+    @include flex-box($align: center, $wrap: wrap, $direction: column, $justify: center);
+    padding: 5% 0 10% 0;
+  }
 
   h2 {
-    height: 2em;
-    flex-basis: 60%;
+    @media only screen and (min-width: 50em) {
+      height: 2em;
+      flex-basis: 60%;
+    }
   }
 
   p {
-    padding-bottom: 5%;
+    @media only screen and (min-width: 50em) {
+      padding-bottom: 5%;
+    }
   }
 
   li {
     padding: 2%;
+    @media only screen and (min-width: 50em) {
+      padding: 2%;
+    }
   }
 }
