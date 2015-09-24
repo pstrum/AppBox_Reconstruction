@@ -1,0 +1,97 @@
+%download-app {
+  p {
+    padding-top: 1em;
+    font-family: $primary-font;
+    font-weight: $font-weight-l;
+    font-size: $font-large;
+    vertical-align: middle;
+    em {
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+  ul {
+    @include flex-box($justify: space-between);
+  }
+  li {
+    display: inline-block;
+  }
+  .btn-large {
+    display: inline-block;
+    min-width: 14rem;
+    font-family: $primary-alt-font;
+    font-size: 1.375rem;
+    font-weight: $font-weight-r;
+    span {
+      padding-right: 0.5em;
+      font-size: 1.5em;
+      vertical-align: -0.125em;
+    }
+  }
+  .svg-google {
+    line-height: 0;
+    vertical-align: middle;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 1em;
+      height: 0.95em;
+      background: url('/img/google-store.svg') no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+
+
+.download-center {
+  @extend %download-app;
+  text-align: center;
+  h2 {
+    font-weight: $font-weight-m;
+    font-size: 1.875em;
+    text-transform: uppercase;
+  }
+
+  .arrow {
+    float: right;
+    width: 3.5rem;
+    height: 8rem;
+    vertical-align: middle;
+    background: url('/img/get-it-down-arrow.svg') no-repeat;
+    background-position: 0 1em;
+  }
+}
+
+
+
+.download-left {
+  @extend %download-app;
+  h1 {
+    margin-bottom: 2em;
+    font-weight: $font-weight-l;
+    strong {
+      font-weight: $font-weight-m;
+    }
+    &:after {
+      content: "";
+      display: block;
+      margin-top: 1em;
+      width: 2.618em;
+      height: .2em;
+      background-color: border(primary);
+    }
+  }
+  p {
+    padding-bottom: 2em;
+  }
+  .arrow {
+    display: inline-block;
+    width: 2rem;
+    height: 5rem;
+    margin-left: 1em;
+    vertical-align: text-top;
+    background: url('/img/down-arrow-download.svg') no-repeat;
+    background-position: 0 .5em;
+  }
+}
