@@ -1,15 +1,24 @@
 [data-section="conference-support"] {
   @extend %background-accent-primary;
+  @include flex-box($align: center, $direction: column, $justify: center);
+  padding: 2em;
+  text-align: center;
+
+  @media only screen and (min-width: 50em) {
+    @include flex-box($align: center, $direction: row, $justify: space-between);
+    max-width: 100%;
+    padding: 8% 8% 2% 8%;
+    text-align: left;
+  }
 
   h1 {
     font-size: 1.75em;
     font-family: $secondary-font;
     font-weight: $font-weight-sb;
-  }
-
-  h2 {
-    font-size: 1.375em;
-    font-family: $primary-font;
+    padding: .75em 0;
+    @media only screen and (min-width: 50em) {
+      padding: 4% 0;
+    }
   }
 
   p {
@@ -17,49 +26,72 @@
     font-size: $font-small;
   }
 
-  @media only screen and (min-width: 50em) {
-    @include flex-box($align: center, $direction: row, $justify: space-between);
-    max-width: 100%;
-    padding: 8% 8% 2% 8%;
+  .conference-text-wrapper {
 
-    .conference-text-wrapper {
+    @media only screen and (min-width: 50em) {
       order: 1;
       max-width: 45%;
       padding-bottom: 8%;
+    }
+  }
 
-      .btn-small {
-        border-top: 3px solid border('new');
-        border-bottom: 3px solid border('new');
-        background: color('base');
-        color: text('secondary');
-        display: inline-block;
-      }
+  .btn-small {
+    border-top: 3px solid border('new');
+    border-bottom: 3px solid border('new');
+    background: color('base');
+    color: text('secondary');
+    display: inline-block;
+  }
 
-      h1 {
-        padding: 4% 0;
-      }
+  aside {
 
-      aside {
-        @include flex-box($wrap: wrap, $direction: row);
-        align-items: center;
-        margin: 10% 0 0 0;
+    @include flex-box($wrap: wrap, $direction: row);
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0 0 0;
 
-        div {
-          margin: 1% 5%;
-          span {
-            font-size: 3em;
-            text-align: center;
-          }
+    @media only screen and (min-width: 50em) {
+      justify-content: flex-start;
+    }
 
-          p {
-            padding-top: 1.2em;
-            text-align: center;
-          }
-        }
+    h2 {
+      font-family: $primary-font;
+      font-size: 1em;
+      padding: .75em 0;
+      @media only screen and (min-width: 50em) {
+        font-size: 1.375em;
+        padding: 0;
       }
     }
 
-    img {
+    div {
+      margin: 1em;
+      @media only screen and (min-width: 50em) {
+        margin: 1% 5%;
+      }
+
+      span {
+        text-align: center;
+        font-size: 1.5em;
+        @media only screen and (min-width: 50em) {
+          font-size: 3em;
+        }
+      }
+
+      p {
+        text-align: center;
+        padding-top: .5em;
+        @media only screen and (min-width: 50em) {
+          padding-top: 1.2em;
+        }
+      }
+    }
+  }
+
+  img {
+    display: none;
+    @media only screen and (min-width: 50em) {
+      display: flex;
       order: 3;
       width: 50%;
       flex-basis: 50%;
