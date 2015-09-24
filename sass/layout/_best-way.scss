@@ -35,7 +35,7 @@
 
      @media only screen and (min-width: $break) {
       margin: 2em 0;
-      width: 60%;
+      // width: 80%;
     }
 
     strong {
@@ -45,6 +45,7 @@
   }
 
   video {
+    width: 146px;
     margin: 2em 0;
   }
 
@@ -67,7 +68,7 @@
   figcaption {
      @media only screen and (min-width: $break) {
       position: absolute;
-      top: 50%;
+      top: 40%;
       right: -12em;
     }
   }

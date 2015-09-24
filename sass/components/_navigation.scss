@@ -55,7 +55,7 @@ header {
   z-index: 1000;
 
   @media only screen and (min-width: 50em) {
-    @include flex-box($wrap: nowrap, $direction: row, $justify: space-between);
+    @include flex-box($wrap: nowrap, $direction: row, $justify: space-around);
     position: absolute;
     width: 45%;
     padding-top: 4%;
@@ -119,6 +119,7 @@ header {
 
       @media only screen and (min-width: 50em) {
         overflow: visible;
+        width: auto;
         border: none;
       }
     }
