@@ -3,5 +3,5 @@
 }
 
 .l-flex-container-app-support {
-    @include flex-box($align: flex-start, $wrap: wrap, $direction: collumn, $justify: center);
+    @include flex-box($align: flex-start, $wrap: wrap, $direction: row, $justify: center);
 }
