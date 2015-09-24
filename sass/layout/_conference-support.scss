@@ -1,19 +1,24 @@
 [data-section="conference-support"] {
   @extend %background-accent-primary;
-  position: relative;
+  @include flex-box($align: center, $direction: column, $justify: center);
   padding: 2em;
+  text-align: center;
 
+  @media only screen and (min-width: 50em) {
+    @include flex-box($align: center, $direction: row, $justify: space-between);
+    max-width: 100%;
+    padding: 8% 8% 2% 8%;
+    text-align: left;
+  }
 
   h1 {
     font-size: 1.75em;
     font-family: $secondary-font;
     font-weight: $font-weight-sb;
-    float: left;
-  }
-
-  h2 {
-    font-size: 1.375em;
-    font-family: $primary-font;
+    padding: .75em 0;
+    @media only screen and (min-width: 50em) {
+      padding: 4% 0;
+    }
   }
 
   p {
@@ -21,8 +26,16 @@
     font-size: $font-small;
   }
 
+  .conference-text-wrapper {
+
+    @media only screen and (min-width: 50em) {
+      order: 1;
+      max-width: 45%;
+      padding-bottom: 8%;
+    }
+  }
+
   .btn-small {
-    margin-top: 6em;
     border-top: 3px solid border('new');
     border-bottom: 3px solid border('new');
     background: color('base');
@@ -30,53 +43,83 @@
     display: inline-block;
   }
 
-  & aside {
-    display: flex;
-    width: 35%;
-    margin-top: 3em;
+  aside {
+
+    @include flex-box($wrap: wrap, $direction: row);
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0 0 0;
+
+    @media only screen and (min-width: 50em) {
+      justify-content: flex-start;
+    }
+
+    h2 {
+      font-family: $primary-font;
+      font-size: 1em;
+      padding: .75em 0;
+      @media only screen and (min-width: 50em) {
+        font-size: 1.375em;
+        padding: 0;
+      }
+    }
 
     div {
-      float: right;
-
-      p {
-      margin: 0;
-      width: 100%;
-      text-align: center;
-      text-transform: uppercase;
-      display: inline-block;
-    }
+      margin: 1em;
+      @media only screen and (min-width: 50em) {
+        margin: 1% 5%;
+      }
 
       span {
-      font-size: 3em;
-      text-align: center;
+        text-align: center;
+        font-size: 1.5em;
+        @media only screen and (min-width: 50em) {
+          font-size: 3em;
+        }
+      }
+
+      p {
+        text-align: center;
+        padding-top: .5em;
+        @media only screen and (min-width: 50em) {
+          padding-top: 1.2em;
+        }
+      }
     }
   }
-}
 
-  & aside h2 {
-    height: 3em;
-    float: left;
-    display: inline-block;
-    padding-right: 3em;
-    background-image: url('/img/right-arrow-new-feature.svg');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-  }
-
-  & img {
+  img {
     display: none;
-  }
-
-  @media only screen and (min-width: $break) {
-    & {
-      padding: 5% 9% 10%;
-    }
-
-    & img {
-    max-width: 50%;
-    display: block;
-    float: right;
+    @media only screen and (min-width: 50em) {
+      display: flex;
+      order: 3;
+      width: 50%;
+      flex-basis: 50%;
     }
   }
 }
 
+  // h1 {
+  //   font-size: 1.75em;
+  //   font-family: $secondary-font;
+  //   font-weight: $font-weight-sb;
+  //   float: left;
+  // }
+
+  // h2 {
+  //   font-size: 1.375em;
+  //   font-family: $primary-font;
+  // }
+
+  // p {
+  //   font-family: $primary-font;
+  //   font-size: $font-small;
+  // }
+
+  // .btn-small {
+  //   border-top: 3px solid border('new');
+  //   border-bottom: 3px solid border('new');
+  //   background: color('base');
+  //   color: text('secondary');
+  //   display: inline-block;
+  // }
