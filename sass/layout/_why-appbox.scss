@@ -1,6 +1,7 @@
 [data-section="why-appbox"] {
   @extend %background-primary-accent;
-    @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: center);
+  @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: center);
+    width: 100%;
     align-content: center;
     padding: 5%;
 
