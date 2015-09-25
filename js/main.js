@@ -26,7 +26,7 @@ $(function() {
       slidesPerView: "auto",
       pagination: ".swiper-pagination-2",
       paginationClickable: true,
-      centeredSlides: true,
+      centeredSlides: false,
       loop: true
     });
   }
