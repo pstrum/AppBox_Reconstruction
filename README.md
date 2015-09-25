@@ -54,3 +54,4 @@ Demos your completed project; things you learned and approaches you took to solv
 ## RESOURCES USED
 - Mobile Navigation adapted from Andrew Gustafson's "Smart Mobile Navigation Without Hacks" (http://www.creativebloq.com/css3/build-smart-mobile-navigation-without-hacks-6122800)
 - CSS-flag styling adapted from Harry Roberts(http://csswizardry.com/2013/05/the-flag-object/)
+- Dependency Smooth Scroll installed with NPM. (https://github.com/kswedberg/jquery-smooth-scroll)
