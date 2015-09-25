@@ -35,7 +35,8 @@ $iconBase:
 (play4 1.25em "\e614")
 (behance 1.25em "\e60b")
 (apple2 1.25em "\e615")
-(android 1.25em "\e616");
+(android 1.25em "\e616")
+(quote 2em "\e617");
 
 @each $iconP in $iconPrimary {
   .icon-#{nth($iconP, 1)} {
