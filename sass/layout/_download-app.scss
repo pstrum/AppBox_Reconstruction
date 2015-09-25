@@ -1,6 +1,4 @@
 [data-section="download-app"] {
-  // height: 30em;
-  // @include flex-box($wrap: wrap, $direction: column);
   background: linear-gradient(185deg, color(primary) 0%,
                                       color(primary) calc(50% + 7vw),
                                       color(secondary) calc(50% + 7vw),
@@ -27,16 +25,9 @@
 
     button {
       margin-top: 2em;
-      // float: right;
 
       @media only screen and (min-width: $break) {
-        // float: right;
         margin-top: 0;
-        // margin-left: calc(100% - 14em);
-        // position: relative;
-        // float: right;
-        // top: -60px;
-        // margin-left: calc(100% - 75px);
       }
     }
 

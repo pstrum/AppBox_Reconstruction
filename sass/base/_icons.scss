@@ -45,12 +45,6 @@ $iconBase:
     background-color: transparent;
     color: color('accent');
     width: 100%;
-    // border-top: solid 5px;
-    // border-bottom: solid 5px;
-    // border-left: solid 1px;
-    // border-right: solid 1px;
-    // border-color: color('secondary');
-    // border-radius: 50%;
     padding: nth($iconP, 3);
     @include icon-border($color: border('primary'));
     &:before {
