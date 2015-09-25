@@ -1,5 +1,8 @@
 [data-section="more-apps"] {
   @extend %background-accent-primary;
+  padding: 5em 1em 10em;
 
-  // color: color('primary');
+  h1 {
+    margin-bottom: 2em;
+  }
 }

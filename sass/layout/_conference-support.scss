@@ -4,7 +4,7 @@
   padding: 2em;
   text-align: center;
 
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: $break) {
     @include flex-box($align: center, $direction: row, $justify: space-between);
     max-width: 100%;
     padding: 8% 8% 2% 8%;
@@ -16,7 +16,7 @@
     font-family: $secondary-font;
     font-weight: $font-weight-sb;
     padding: .75em 0;
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       padding: 4% 0;
     }
   }
@@ -28,9 +28,9 @@
 
   .conference-text-wrapper {
 
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       order: 1;
-      max-width: 45%;
+      max-width: 50%;
       padding-bottom: 8%;
     }
   }
@@ -50,30 +50,30 @@
     align-items: center;
     margin: 10% 0 0 0;
 
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       justify-content: flex-start;
     }
 
     h2 {
       font-family: $primary-font;
       font-size: 1em;
-      padding: .75em 0;
-      @media only screen and (min-width: 50em) {
+      // padding: .75em 0;
+      @media only screen and (min-width: $break) {
         font-size: 1.375em;
-        padding: 0;
+        // padding: 0;
       }
     }
 
     div {
-      margin: 1em;
-      @media only screen and (min-width: 50em) {
+      margin: .3em;
+      @media only screen and (min-width: $break) {
         margin: 1% 5%;
       }
 
       span {
         text-align: center;
         font-size: 1.5em;
-        @media only screen and (min-width: 50em) {
+        @media only screen and (min-width: $break) {
           font-size: 3em;
         }
       }
@@ -81,7 +81,7 @@
       p {
         text-align: center;
         padding-top: .5em;
-        @media only screen and (min-width: 50em) {
+        @media only screen and (min-width: $break) {
           padding-top: 1.2em;
         }
       }
@@ -90,7 +90,8 @@
 
   img {
     display: none;
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
+      display: -webkit-flex;
       display: flex;
       order: 3;
       width: 50%;

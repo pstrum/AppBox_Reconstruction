@@ -1,7 +1,7 @@
 .swiper-1 {
   height: calc(25em - 20vw);
   width: 90%;
-  @media screen and (min-width: 50em) {
+  @media screen and (min-width: $break) {
     width: 100%;
     height: calc(19em - 7vw);
   }
@@ -17,7 +17,7 @@
 }
 
 .swiper-wrapper-1 {
-  @media screen and (min-width: 50em) {
+  @media screen and (min-width: $break) {
     width: 60%;
     margin: 0 auto;
   }

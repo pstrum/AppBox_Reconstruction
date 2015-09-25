@@ -12,6 +12,7 @@
     background-position: left .2em;
     background-size: 1em;
     border: none;
+    -webkit-appearance: none;
     @include transition(all .3s ease-in);
     &:hover {
       opacity: .5;
@@ -28,7 +29,7 @@
     &:hover {
       opacity: 1;
     }
-    @media screen and (min-width: 50em) {
+    @media screen and (min-width: $break) {
       width: 14em;
     }
   }

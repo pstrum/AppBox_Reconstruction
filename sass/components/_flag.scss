@@ -1,14 +1,14 @@
 .flag {
   width: 15em;
-  height: 19.5em;
-  // margin: 10px 10px;
-  padding:  6em 1em 1.5em;
+  height: 20.5em;
+  padding:  5em 1em 1.5em;
   text-align: center;
   color: text('primary');
   background-color: color('secondary');
 
   & h2 {
   margin-top: 6em;
+  margin-bottom: 1.5em;
   text-transform: uppercase;
   font-family: $secondary-font;
   font-weight: $font-weight-sb;
@@ -50,5 +50,12 @@
     h2 {
       margin-top: 1.3em;
     }
+  }
+}
+
+.css-flag__body {
+  h2 {
+    font-weight: $font-weight-sb;
+    font-size: $font-regular;
   }
 }
