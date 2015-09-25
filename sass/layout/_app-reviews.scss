@@ -4,10 +4,14 @@
 
   h1 {
     text-align: center;
+    font-size: $font-larger;
   }
 
   p {
     text-align: center;
+    font-family: $primary-font;
+    font-size: $font-large;
+    margin: 1% 0;
   }
 
   .swiper-container {
