@@ -1,7 +1,8 @@
 $(document).ready(function ()  {
-  $('#nav a').smoothScroll({
+  $('#nav .nav-link').smoothScroll({
     offset: -150,
-    speed: 1000
+    speed: 1000,
+    exclude: ['.close-nav','#top']
   });
 
   $('.to-top').smoothScroll({
