@@ -12,6 +12,7 @@
     background-position: left .2em;
     background-size: 1em;
     border: none;
+    -webkit-appearance: none;
     @include transition(all .3s ease-in);
     &:hover {
       opacity: .5;
