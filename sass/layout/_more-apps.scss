@@ -2,6 +2,10 @@
   @extend %background-accent-primary;
   padding: 5em 1em 10em;
 
+  h1 {
+    margin-bottom: 2em;
+  }
+
   ul {
     margin-bottom: 0;
   }
