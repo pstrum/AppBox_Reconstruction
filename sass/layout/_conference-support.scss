@@ -91,6 +91,7 @@
   img {
     display: none;
     @media only screen and (min-width: $break) {
+      display: -webkit-flex;
       display: flex;
       order: 3;
       width: 50%;
