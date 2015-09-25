@@ -1,0 +1,12 @@
+.to-top {
+  display: inline-block;
+  border-left: 2.7em solid transparent;
+  border-right: 2.7em solid transparent;
+  border-bottom: 2.5em solid color(accent);
+  &:after {
+    position: absolute;
+    content: url('/img/carrot.svg');
+    padding-top: 1em;
+    left: -.5em;
+  }
+}
