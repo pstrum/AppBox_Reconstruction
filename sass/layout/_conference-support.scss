@@ -57,15 +57,15 @@
     h2 {
       font-family: $primary-font;
       font-size: 1em;
-      padding: .75em 0;
+      // padding: .75em 0;
       @media only screen and (min-width: $break) {
         font-size: 1.375em;
-        padding: 0;
+        // padding: 0;
       }
     }
 
     div {
-      margin: 1em;
+      margin: .3em;
       @media only screen and (min-width: $break) {
         margin: 1% 5%;
       }
