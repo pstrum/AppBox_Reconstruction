@@ -17,7 +17,7 @@
 
   .screenshot {
     display: none;
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       display: inline-block;
     }
   }

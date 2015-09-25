@@ -11,7 +11,7 @@
   }
   ul {
     display: inline-block;
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       @include flex-box($justify: space-between);
     }
   }
@@ -45,8 +45,6 @@
   }
 }
 
-
-
 .download-center {
   @extend %download-app;
   text-align: center;
@@ -61,8 +59,6 @@
     background-position: right;
   }
 }
-
-
 
 .download-left {
   @extend %download-app;
