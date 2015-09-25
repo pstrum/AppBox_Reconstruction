@@ -3,10 +3,12 @@
 }
 
 %background-primary-accent {
+  background: -webkit-linear-gradient(176deg, color(primary) 0%, color(primary) calc(100% - 7vw), color(accent) calc(100% - 7vw), color(accent) 100%);
   background: linear-gradient(176deg, color(primary) 0%, color(primary) calc(100% - 7vw), color(accent) calc(100% - 7vw), color(accent) 100%);
 }
 
 %background-accent-primary {
+  background: -webkit-linear-gradient(176deg, color(accent) 0%, color(accent) calc(100% - 7vw), color(primary) calc(100% - 7vw), color(primary) 100%);
   background: linear-gradient(176deg, color(accent) 0%, color(accent) calc(100% - 7vw), color(primary) calc(100% - 7vw), color(primary) 100%);
 }
 
