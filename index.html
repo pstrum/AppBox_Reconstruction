@@ -9,20 +9,19 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,500|Raleway:600,500,400,300|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
     <header id="top">
       <h1 class="logo">AppBox</h1>
-      <a class="menu-toggle" href="#nav">MENU</a>
+      <a id="menuToggle" class="menu-toggle" href="#nav">MENU</a>
       <nav role="navigation">
         <ul id="nav" class="menu">
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#features">Features</a></li>
-          <li><a class="nav-link" href="#reviews">Reviews</a></li>
-          <li><a class="nav-link" href="#screens">Screens</a></li>
-          <li><a class="nav-link" href="#blog">Blog</a></li>
+          <li><a class="nav-link" href="#why">Why AppBox</a></li>
+          <li><a class="nav-link" href="#screens">Screenshots</a></li>
+          <li><a class="nav-link" href="#more">More Apps</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="#featured">Featured</a></li>
           <li><a class="nav-link" href="#support">Support</a></li>
           <li>
             <div class="nav-link">
@@ -32,12 +31,12 @@
               </form>
             </div>
           </li>
-          <li class="close-nav"><a href="#top"></a></li>
+          <li class="close-nav"><a href="#menuToggle"></a></li>
         </ul>
       </nav>
     </header>
     <main id="content">
-      <section>
+      <section class="hero-section" id="backtotop">
         <div data-div="best-way">
           <div class="hero-text-wrapper">
             <h1>Best Way To Present Your Beautiful Mobile App</h1>
@@ -55,12 +54,12 @@
           <h2>Get it for free</h2>
           <p>Choose your native platform and download the app <em>free!</em></p>
           <ul>
-            <li><a class="btn-large" href="#"><span class="svg-google"></span>Google Play</a></li>
-            <li><a class="btn-large" href="#"><span class="icon-apple2"></span>iOS App Store</a></li>
+            <li><a class="btn-large" target="_blank" href="https://play.google.com/store/apps?hl=en"><span class="svg-google"></span>Google Play</a></li>
+            <li><a class="btn-large" target="_blank" href="https://itunes.apple.com/us/genre/ios/id36?mt=8&cid=wwa-us-kwg-features"><span class="icon-apple2"></span>iOS App Store</a></li>
           </ul>
         </aside>
       </section>
-      <section data-section="amazing-features">
+      <section data-section="amazing-features" id="features">
         <h1 class="header-underline">Some Amazing Features</h1>
         <ul class="l-flex-container">
           <li class="flag">
@@ -93,13 +92,13 @@
           <aside>
             <h2>Free Download On</h2>
             <div>
-              <a href="#">
+              <a target="_blank" href="https://play.google.com/store/apps?hl=en">
                 <span class="icon-android"></span><br>
                 <p>Android</p>
               </a>
             </div>
             <div>
-              <a href="#">
+              <a target="_blank" href="https://itunes.apple.com/us/genre/ios/id36?mt=8&cid=wwa-us-kwg-features">
                 <span class="icon-apple2"></span><br>
                 <p>iOS</p>
               </a>
@@ -108,7 +107,7 @@
         </div>
         <img src="/img/portrait-display-mockup.png" alt="" title="">
       </section>
-      <section data-section="why-appbox">
+      <section data-section="why-appbox" id="why">
         <h1 class="header-underline">Why Choose AppBox</h1>
         <img src="/img/iphone-6.png" alt="Image of iPhone" title="iPhone">
         <ul class="why-1">
@@ -216,7 +215,7 @@
           <div class="swiper-pagination swiper-pagination-1"></div>
         </div>
       </section>
-      <section data-section="appbox-screenshots">
+      <section data-section="appbox-screenshots" id="screens">
         <h1 class="header-underline">AppBox Screenshots</h1>
         <ul class="l-flex-container">
           <li>
@@ -238,7 +237,7 @@
         <a href="#"><img src="/img/left-arrow-screenshot.svg"></a>
         <a href="#"><img src="/img/right-arrow-screenshot.svg"></a>
       </section>
-      <section data-section="more-apps">
+      <section data-section="more-apps" id="more">
         <h1 class="header-underline">More Apps By AppBox</h1>
         <div class="swiper-container swiper-2">
           <ul class="swiper-wrapper swiper-wrapper-2">
@@ -312,8 +311,8 @@
           <h1><strong>Download</strong> Our App</h1>
           <p class="download-text">Choose your native platform and download the app <em>free!</em></p>
           <ul>
-            <li><a class="btn-large" href="#"><span class="svg-google"></span>Google Play</a></li>
-            <li><a class="btn-large" href="#"><span class="icon-apple2"></span>iOS App Store</a></li>
+            <li><a class="btn-large" target="_blank" href="https://play.google.com/store/apps?hl=en"><span class="svg-google"></span>Google Play</a></li>
+            <li><a class="btn-large" target="_blank" href="https://itunes.apple.com/us/genre/ios/id36?mt=8&cid=wwa-us-kwg-features"><span class="icon-apple2"></span>iOS App Store</a></li>
           </ul>
           <aside class="newsletter">
             <form>
@@ -324,7 +323,7 @@
           </aside>
          </div>
       </section>
-      <section data-section="discounted-pricing">
+      <section data-section="discounted-pricing" id="pricing">
         <h1 class="header-underline">Discounted Pricing</h1>
         <p>Nullam id odio quis risus placerat aliquam. Cum sociis natoque penatibus et magnis dis part urient montes nascetur ridiculus mus curabitur tellus lacus.</p>
         <table class="bundle">
@@ -485,7 +484,7 @@
           </li>
         </ul>
       </section>
-      <section data-section="appbox-featured">
+      <section data-section="appbox-featured" id="featured">
         <h1 class="header-underline">AppBox Featured In ...</h1>
         <ul class="l-flex-container">
           <li>
@@ -530,7 +529,7 @@
           </li>
         </ul>
       </section>
-      <section data-section="app-support">
+      <section data-section="app-support" id="support">
         <h1>App Support</h1>
         <div class="l-flex-container-app-support">
           <ul>
@@ -577,7 +576,7 @@
       </section>
     </main>
     <footer>
-      <a class="to-top" title="Back to the Top" href="#"></a>
+      <a class="to-top" title="Back to the Top" href="#backtotop"></a>
       <p class="logo">AppBox</p>
       <p>Copyright &copy; 2015 . Designed by Templines</p>
       <ul>
@@ -604,7 +603,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.jquery.min.js"></script>
-    <script src="js/plugins.js"></script>
+    <script src="js/jquery.smooth-scroll.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
+

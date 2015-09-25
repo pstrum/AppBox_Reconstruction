@@ -30,8 +30,9 @@
       // float: right;
 
       @media only screen and (min-width: $break) {
-        float: right;
+        // float: right;
         margin-top: 0;
+        // margin-left: calc(100% - 14em);
         // position: relative;
         // float: right;
         // top: -60px;
@@ -42,10 +43,15 @@
     @media only screen and (min-width: $break) {
       width: 50%;
       text-align: left;
+
       input {
           display: inline-block;
           width: 70%;
         }
+
+      button {
+        float: right;
+      }
     }
 
     h1 {
@@ -60,7 +66,14 @@
       width: 80%;
 
       @media only screen and  (min-width: $break) {
-        width: 50%;
+        width: 100%;
+        @include flex-box($justify: flex-start);
+        & li {
+          min-width: 14rem;
+        }
+        &:first-child {
+          margin-right: 1em;
+        }
       }
     }
 
@@ -83,3 +96,5 @@
     }
   }
 }
+
+
