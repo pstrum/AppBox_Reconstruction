@@ -1,32 +1,20 @@
 .swiper-1 {
-  height: calc(25em - 20vw);
-  width: 90%;
-  @media screen and (min-width: $break) {
-    width: 85%;
-    height: calc(19em - 7vw);
+  .swiper-wrapper-1 {
+    @media screen and (min-width: $break) {
+      width: 60%;
+      margin: 0 auto;
+    }
   }
 }
 
 .swiper-2 {
-  height: 510px;
-  width: 95%;
-  @media screen and (min-width: 50em) {
-    width: 85%
-  }
-}
-
-.swiper-wrapper-1 {
-  @media screen and (min-width: $break) {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
-
-.swiper-wrapper-2 {
   li {
+    background-color: color(accent);
     height: 435px;
-    margin: 0 1.5%;
     width: 270px;
+    @media screen and (min-width: $break) {
+      margin: 0 1.5%
+    }
   }
 }
 
