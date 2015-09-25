@@ -3,7 +3,7 @@ header {
   height: 4em;
   top: 0;
 
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: $break) {
     display: block;
     height: 8em;
   }
@@ -16,7 +16,7 @@ header {
     top: .25em;
     @include logo-underline(100%, url('/img/logo-path.svg'));
 
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       display: inline-block;
       left: 10%;
       top: 1.25em;
@@ -35,7 +35,7 @@ header {
   font-family: $primary-font;
   font-size: em(14);
 
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: $break) {
     display: none;
   }
 
@@ -54,7 +54,7 @@ header {
   left: 0;
   z-index: 1000;
 
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: $break) {
     @include flex-box($wrap: nowrap, $direction: row, $justify: space-around);
     position: absolute;
     width: 45%;
@@ -64,7 +64,7 @@ header {
   }
 
   .close-nav {
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       display: none;
     }
   }
@@ -86,7 +86,7 @@ header {
       height: 0;
       line-height: 0;
 
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: $break) {
         display: none;
       }
 
@@ -116,7 +116,7 @@ header {
       -o-transition: height 0.25s ease in;
       transition: height 0.25s ease in;
 
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: $break) {
         overflow: visible;
         width: auto;
         border: none;
@@ -137,7 +137,7 @@ header {
       width: 100%;
       font-size: em(24);
 
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: $break) {
         color: color('base');
         line-height: 1em;
         height: 2em;
@@ -151,7 +151,7 @@ header {
       color: color('accent');
       background-color: #333333;
 
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: $break) {
         background-color: transparent;
       }
     }

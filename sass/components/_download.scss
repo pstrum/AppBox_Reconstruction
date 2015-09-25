@@ -11,7 +11,7 @@
   }
   ul {
     display: inline-block;
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       @include flex-box($justify: space-between);
     }
   }

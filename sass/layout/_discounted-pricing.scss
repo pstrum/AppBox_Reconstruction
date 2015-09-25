@@ -3,14 +3,14 @@
   @include flex-box($align: center, $direction: column, $justify: center);
   padding: 4em;
   text-align: center;
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: $break) {
     @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: space-around);
     padding: 5% 10% 15% 10%;
   }
 
   h1 {
     margin-bottom: 1em;
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       order: 1;
       flex-basis: 100%;
       text-align: center;
@@ -20,7 +20,7 @@
 
   p {
     margin: 1em;
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       order: 2;
       flex-basis: 100%;
       padding: 2% 20%;
@@ -32,7 +32,7 @@
   table {
     margin: 1em;
 
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: $break) {
       order: 3;
       flex-basis: 20%;
       margin: 1%;
