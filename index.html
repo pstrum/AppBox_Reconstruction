@@ -6,11 +6,9 @@
     <title>AppBox | Build Beautiful Mobile Apps</title>
     <meta name="description" content="Best way to build and present your mobile app">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,500|Raleway:600,500,400,300|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
     <header id="top">
@@ -37,8 +35,8 @@
         </ul>
       </nav>
     </header>
-    <main id="content">
-      <section class="hero-section">
+    <main>
+      <section class="hero-section" id="backtotop">
         <div data-div="best-way">
           <div class="hero-text-wrapper">
             <h1>Best Way To Present Your Beautiful Mobile App</h1>
@@ -61,7 +59,7 @@
           </ul>
         </aside>
       </section>
-      <section data-section="amazing-features">
+      <section data-section="amazing-features" id="features">
         <h1 class="header-underline">Some Amazing Features</h1>
         <ul class="l-flex-container">
           <li class="flag">
@@ -175,7 +173,7 @@
           </li>
         </ul>
       </section>
-      <section data-section="app-reviews">
+      <section data-section="app-reviews" id="reviews">
         <div class="review-icon">
           <span class="icon-quote"></span>
         </div>
@@ -217,7 +215,7 @@
           <div class="swiper-pagination swiper-pagination-1"></div>
         </div>
       </section>
-      <section data-section="appbox-screenshots">
+      <section data-section="appbox-screenshots" id="screens">
         <h1 class="header-underline">AppBox Screenshots</h1>
         <ul class="l-flex-container">
           <li>
@@ -531,7 +529,7 @@
           </li>
         </ul>
       </section>
-      <section data-section="app-support">
+      <section data-section="app-support" id="support">
         <h1>App Support</h1>
         <div class="l-flex-container-app-support">
           <ul>
@@ -578,7 +576,7 @@
       </section>
     </main>
     <footer>
-      <a class="to-top" title="Back to the Top" href="#"></a>
+      <a class="to-top" title="Back to the Top" href="#backtotop"></a>
       <p class="logo">AppBox</p>
       <p>Copyright &copy; 2015 . Designed by Templines</p>
       <ul>
@@ -605,7 +603,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.jquery.min.js"></script>
-    <script src="js/plugins.js"></script>
+    <script src="js/jquery.smooth-scroll.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
