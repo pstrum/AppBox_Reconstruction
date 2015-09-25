@@ -20,6 +20,7 @@
   div {
 
     @media only screen and (min-width: $break) {
+      padding-top: 10%;
       margin-right: 8%;
       width: 45%;
     }
@@ -28,7 +29,7 @@
   @media only screen and (min-width: $break) {
     @include flex-box($align: flex-start, $wrap: wrap, $direction: row, $justify: center);
     text-align: left;
-    padding: 5% 2% 0%;
+    padding: 0% 5%;
   }
 
   h1 {
@@ -38,7 +39,7 @@
     font-weight: $font-weight-sb;
 
     @media only screen and (min-width: $break) {
-      margin: 1em 0;
+      margin: 1em 0em 0em;
     }
   }
 
@@ -48,8 +49,7 @@
     font-size: $font-large;
 
      @media only screen and (min-width: $break) {
-      margin: 2em 0;
-      // width: 80%;
+      margin: 1em 0em;
     }
 
     strong {
@@ -63,13 +63,13 @@
     margin: 2em 0;
   }
 
-  & img  {
+  img  {
     display: none;
 
     @media only screen and (min-width: $break) {
       display: inline-block;
       overflow: none;
-      margin-top: 8%;
+      margin-top: 5%;
     }
   }
 
