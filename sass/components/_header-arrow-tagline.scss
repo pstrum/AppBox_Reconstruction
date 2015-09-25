@@ -29,15 +29,9 @@
   > p {
     @extend %paragraph-arrow;
     display: inline-block;
-    padding: 4em 5% 1em;
+    padding: 3.5em 3em 1em;
     background: url('/img/down-arrow-team.svg') no-repeat;
     background-position: right;
-  }
-  &:before {
-    content: "";
-    display: inline-block;
-
-    @include icon-border($radius: 50%, $color: border('primary'))
   }
 }
 
