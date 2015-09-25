@@ -1,5 +1,4 @@
 .app-store-item-preview {
-  margin: 0 2em;
   background-color: color('base');
   font-family: $primary-font;
   font-size: $font-smaller;
@@ -16,30 +15,34 @@
     color: text('primary');
     font-size: $font-smaller;
     line-height: 2;
+    text-align: center;
     transition: all 0.3s ease-in 0s;
   }
 
   & span {
     text-decoration: line-through;
-    color: text('placeholder');
+    color: $disabled-color;
   }
 
   figcaption {
-    padding: 1.5em;
+    padding: 2em;
     color: color('primary');
+    h2 {
+      font-weight: $font-weight-sb;
+      font-size: $font-regular;
+    }
+    img {
+      margin-top: 0.7em;
+    }
+    p {
+      font-family: $primary-alt-font;
+      font-size: 1.125rem;
+      margin-top: 1em;
+    }
   }
 
   &:hover .review-text-overlay {
     opacity: 1;
     background-color: $hover-other-apps;
-  }
-}
-
-.app-review-media {
-  @include flex-box($align: center, $justify: center);
-  @extend %figcaption-text;
-  figcaption {
-    display: inline-block;
-    margin-left: 0.5em;
   }
 }
