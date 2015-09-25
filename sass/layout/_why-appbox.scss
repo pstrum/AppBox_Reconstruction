@@ -5,6 +5,9 @@
     @include flex-box($align: center, $direction: row, $justify: space-between);
     max-width: 100%;
     margin: 5% 0;
+    .why-item-wrapper {
+      margin: 0 auto;
+    }
   }
   .why-icon-wrapper {
     display: inline;
@@ -12,7 +15,7 @@
   }
 
   .why-item-wrapper {
-    margin: 0 auto;
+    margin: 2em auto;
     h2 {
       margin: 1em 0 .5em 0;
       padding: 0 2em;
@@ -89,7 +92,12 @@
       .why-item-wrapper {
         -webkit-order: 1;
         order: 1;
+        padding-right: 0;
+      }
+      @media only screen and (min-width: $break) {
+      .why-item-wrapper {
         padding-right: 5%;
+      }
       }
     }
   }
