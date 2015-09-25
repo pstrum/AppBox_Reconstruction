@@ -2,7 +2,7 @@ $(function() {
 
   var mql = window.matchMedia("(min-width: 800px)");
   var appReviewsCarousel = appReviewsSettings();
-  var moreAppsCarousel = multiSlide();
+  var moreAppsCarousel = moreAppsSettings();
 
 
   function singleSlide(dir, space, speed, auto) {
@@ -17,13 +17,13 @@ $(function() {
     });
   }
 
-  function multiSlide() {
+  function multiSlide(slides) {
     return new Swiper (".swiper-2", {
       direction: "horizontal",
       spaceBetween: 0,
       speed: 1000,
       autoplay: 5000,
-      slidesPerView: "auto",
+      slidesPerView: slides,
       pagination: ".swiper-pagination-2",
       paginationClickable: true,
       centeredSlides: true,
@@ -38,12 +38,21 @@ $(function() {
     return singleSlide("horizontal", 30, 300, "");
   }
 
+  function moreAppsSettings() {
+    if (mql.matches) {
+      return multiSlide("auto");
+    }
+    return multiSlide(1);
+  }
+
   function clearSwipers() {
     appReviewsCarousel.destroy(false, true);
+    moreAppsCarousel.destroy(false, true);
   }
 
   function setSwipers() {
     appReviewsCarousel = appReviewsSettings();
+    moreAppsCarousel = moreAppsSettings();
   }
 
   function resetSwipers() {
