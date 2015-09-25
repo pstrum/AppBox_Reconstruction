@@ -39,8 +39,8 @@
     </header>
     <main id="content">
       <section>
-        <div data-div="best-way" class="">
-          <div>
+        <div data-div="best-way">
+          <div class="hero-text-wrapper">
             <h1>Best Way To Present Your Beautiful Mobile App</h1>
             <p>AppBox is full of awesome features. Its designed for<br> <strong>App Landing and App Store site</strong></p>
             <figure>
@@ -48,7 +48,9 @@
               <figcaption>Watch the Intro Video</figcaption>
             </figure>
           </div>
-          <img src="/img/iphones.png" alt="Image of cool iPhones" title="Cool iPhones">
+          <div class="hero-image-wrapper">
+            <img src="/img/iphones.png" alt="Image of cool iPhones" title="Cool iPhones">
+          </div>
         </div>
         <aside data-aside="get-free" class="download-center">
           <h2>Get it for free</h2>
@@ -214,7 +216,7 @@
       </section>
       <section data-section="appbox-screenshots">
         <h1 class="header-underline">AppBox Screenshots</h1>
-        <ul>
+        <ul class="l-flex-container">
           <li>
             <figure>
               <img src="/img/iphone-screenshot.svg" alt="Screenshot 1" title="Screenshot 1">
@@ -231,13 +233,13 @@
             </figure>
           </li>
         </ul>
-        <a href="#"></a>
-        <a href="#"></a>
+        <a href="#"><img src="/img/left-arrow-screenshot.svg"></a>
+        <a href="#"><img src="/img/right-arrow-screenshot.svg"></a>
       </section>
       <section data-section="more-apps">
         <h1 class="header-underline">More Apps By AppBox</h1>
         <ul class="l-flex-container">
-          <li class="media">
+          <li class="app-store-item-preview">
             <figure>
               <img src="/img/app-store-placeholder.png" alt="App Store Placeholder Image" title="App Store Placeholder Image">
               <p class="review-text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis etu nostrud exercitation ullamco laboris</p>
@@ -252,7 +254,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="media">
+          <li class="app-store-item-preview">
             <figure>
               <img src="/img/app-store-placeholder.png" alt="App Store Placeholder Image" title="App Store Placeholder Image">
               <p class="review-text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis etu nostrud exercitation ullamco laboris</p>
@@ -267,7 +269,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="media">
+          <li class="app-store-item-preview">
             <figure>
               <img src="/img/app-store-placeholder.png" alt="App Store Placeholder Image" title="App Store Placeholder Image">
               <p class="review-text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis etu nostrud exercitation ullamco laboris</p>
@@ -282,7 +284,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="media">
+          <li class="app-store-item-preview">
             <figure>
               <img src="/img/app-store-placeholder.png" alt="App Store Placeholder Image" title="App Store Placeholder Image">
               <p class="review-text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis etu nostrud exercitation ullamco laboris</p>
@@ -539,7 +541,7 @@
             </li>
             <li class="css-flag">
               <div class="css-flag__image">
-                <span class="icon-location"></span>
+                <span class="icon-phone"></span>
               </div>
               <div class="css-flag__body">
                 <h2>Free Helpline</h2>
@@ -549,7 +551,7 @@
              </li>
             <li class="css-flag">
               <div class="css-flag__image">
-                <span class="icon-location"></span>
+                <span class="icon-envelope"></span>
               </div>
               <div class="css-flag__body">
                 <h2>Email</h2>
@@ -571,29 +573,29 @@
       </section>
     </main>
     <footer>
-      <a href="#"></a>
+      <a class="to-top" title="Back to the Top" href="#"></a>
       <p class="logo">AppBox</p>
       <p>Copyright &copy; 2015 . Designed by Templines</p>
-        <ul>
-          <li>
-            <a class="icon-facebook" href="www.facebook.com"></a>
-          </li>
-          <li>
-            <a class="icon-twitter" href="www.twitter.com"></a>
-          </li>
-          <li>
-            <a class="icon-google-plus" href="www.google.com"></a>
-          </li>
-          <li>
-            <a class="icon-pinterest" href="www.pinterest.com"></a>
-          </li>
-          <li>
-            <a class="icon-behance" href="www.behance.net"></a>
-          </li>
-          <li>
-            <a class="icon-dribbble" href="www.dribbble.com">e</a>
-          </li>
-        </ul>
+      <ul>
+        <li>
+          <a class="icon-facebook" href="www.facebook.com"></a>
+        </li>
+        <li>
+          <a class="icon-twitter" href="www.twitter.com"></a>
+        </li>
+        <li>
+          <a class="icon-google-plus" href="www.google.com"></a>
+        </li>
+        <li>
+          <a class="icon-pinterest" href="www.pinterest.com"></a>
+        </li>
+        <li>
+          <a class="icon-behance" href="www.behance.net"></a>
+        </li>
+        <li>
+          <a class="icon-dribbble" href="www.dribbble.com"></a>
+        </li>
+      </ul>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>')</script>

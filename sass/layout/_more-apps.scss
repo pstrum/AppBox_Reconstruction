@@ -1,5 +1,10 @@
 [data-section="more-apps"] {
   @extend %background-accent-primary;
+  padding: 5em 1em 10em;
+
+  ul {
+    margin-bottom: 0;
+  }
 
   li {
     margin-bottom: 2em;
