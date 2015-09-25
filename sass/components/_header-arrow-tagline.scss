@@ -33,5 +33,11 @@
     background: url('/img/down-arrow-team.svg') no-repeat;
     background-position: right;
   }
+  &:before {
+    content: "";
+    display: inline-block;
+
+    @include icon-border($radius: 50%, $color: border('primary'))
+  }
 }
 
