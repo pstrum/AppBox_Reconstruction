@@ -52,7 +52,7 @@ $iconBase:
     // border-color: color('secondary');
     // border-radius: 50%;
     padding: nth($iconP, 3);
-    @include icon-border($color: color('secondary'));
+    @include icon-border($color: border('primary'));
     &:before {
       content: nth($iconP, 4);
     }

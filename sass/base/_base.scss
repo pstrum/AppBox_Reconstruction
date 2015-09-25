@@ -17,4 +17,10 @@ h1 {
 
 button {
   cursor: pointer;
+
+p {
+  font-family: $primary-font;
+  font-weight: $font-weight-l;
+  font-size: $font-small;
+  line-height: $secondary-lh;
 }
