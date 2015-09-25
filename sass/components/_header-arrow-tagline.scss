@@ -35,3 +35,13 @@
   }
 }
 
+[data-section="conference-support"] {
+  h2 {
+    padding: 0 1em 2em 0;
+    font-family: $primary-font;
+    font-size: $font-large;
+    font-weight: $font-weight-l;
+    background: url('/img/right-arrow-new-feature.svg') no-repeat;
+    background-position: bottom right;
+  }
+}
