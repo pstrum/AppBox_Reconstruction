@@ -2,17 +2,16 @@
   height: calc(25em - 20vw);
   width: 90%;
   @media screen and (min-width: $break) {
-    width: 100%;
+    width: 85%;
     height: calc(19em - 7vw);
   }
 }
 
 .swiper-2 {
-  // background: blue;
-  height: 475px;
-  width: 85%;
+  height: 510px;
+  width: 95%;
   @media screen and (min-width: 50em) {
-    // width: 100%;
+    width: 85%
   }
 }
 
@@ -25,10 +24,8 @@
 
 .swiper-wrapper-2 {
   li {
-    // background: blue;
-    height: 400px;
+    height: 435px;
     margin: 0 1.5%;
-    // display: inline-block;
     width: 270px;
   }
 }
