@@ -91,6 +91,7 @@ $secondary-lh:      1.375;
 ## Sass Architecture
 
 SASS
+main.scss
     - BASE
         + _INDEX.scss
         + _base.scss
@@ -114,7 +115,6 @@ SASS
         + _variables.scss
         + _functions.scss
         + _placeholders.scss
-main.scss
 
 ## Vendors
 
@@ -127,21 +127,21 @@ Bourbon for common mixins.
 - Componentize the comp
     + See reference files 'home-dark-components.pdf'
 - Construct the components
--   _form.scss
--   _app-review-media.scss
--   _header-arrow-tagline.scss
--   _app-store-item-preview.scss 
--   _header-underline.scss
--   _bundle.scss
--   _navigation.scss
--   _buttons.scss
--   _newsletter.scss
--   _carousel.scss
--   _review.scss
--   _download.scss
--   _search.scss
--   _feature-media.scss
--   _to-top.scss
--   _flag.scss            
--   _video.scss
+    + _form.scss
+    + _app-review-media.scss
+    + _header-arrow-tagline.scss
+    + _app-store-item-preview.scss 
+    + _header-underline.scss
+    + _bundle.scss
+    + _navigation.scss
+    + _buttons.scss
+    + _newsletter.scss
+    + _carousel.scss
+    + _review.scss
+    + _download.scss
+    + _search.scss
+    + _feature-media.scss
+    + _to-top.scss
+    + _flag.scss            
+    + _video.scss
 - Adjust the layout of the components
