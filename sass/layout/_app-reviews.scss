@@ -29,19 +29,25 @@
     position: relative;
     top: -3em;
     text-align: center;
-    // margin: 0 auto;
     font-family: $primary-font;
     font-size: $font-large;
     margin: 0 .5em;
 
   }
 
-
-  .swiper-container {
+  .swiper-1 {
     position: relative;
     margin-top: 0;
     top: -2em;
+    height: calc(25em - 20vw);
+    width: 90%;
+    @media screen and (min-width: $break) {
+      width: 85%;
+      height: calc(19em - 7vw);
+    }
   }
+
+  .swiper
 
   figcaption {
     text-align: left;
