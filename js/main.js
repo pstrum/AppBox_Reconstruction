@@ -1,69 +1,56 @@
 $(function() {
 
-  // var appReviews = new Swiper(".swiper-container", {
-  //   direction: "horizontal",
-  //   spaceBetween: 30,
-  //   speed: 300,
-  //   autoplay: 5000,
-  //   pagination: ".swiper-pagination",
-  //   paginationClickable: true,
-  //   centeredSlides: true,
-  //   loop: true
-  // });
+  var mql = window.matchMedia("(min-width: 800px)");
+  var appReviewsCarousel = appReviewsSettings();
+  var moreAppsCarousel = multiSlide();
 
 
-
-  function carousel(dir, space, speed, auto) {
-    return new Swiper (".swiper-container", {
+  function singleSlide(dir, space, speed, auto) {
+    return new Swiper (".swiper-1", {
       direction: dir,
       spaceBetween: space,
       speed: speed,
       autoplay: auto,
-      pagination: ".swiper-pagination",
+      pagination: ".swiper-pagination-1",
+      paginationClickable: true,
+      loop: true
+    });
+  }
+
+  function multiSlide() {
+    return new Swiper (".swiper-2", {
+      direction: "horizontal",
+      spaceBetween: 0,
+      speed: 1000,
+      autoplay: 5000,
+      slidesPerView: "auto",
+      pagination: ".swiper-pagination-2",
       paginationClickable: true,
       centeredSlides: true,
       loop: true
     });
   }
 
-  function initSize() {
-    if ($(document).width() > 800) {
-      appReviews = carousel("vertical", 0, 1000, 5000);
-    } else {
-      appReviews = carousel("horizontal", 30, 300);
+  function appReviewsSettings() {
+    if (mql.matches) {
+      return singleSlide("vertical", 0, 1000, 5000);
     }
+    return singleSlide("horizontal", 30, 300, "");
   }
 
-  function checkSize() {
-    if ($(document).width() > 800) {
-      // $(".swiper-container").each(function() {
-      //   $(this).removeClass("swiper-container-horizontal");
-      // })
-      // $(".swiper-wrapper").removeAttr("style");
-      // $(".swiper-slide").each(function() {
-      //   $(this).removeAttr("style");
-      // })
-      // appReviews = "";
-      appReviews.destroy(false, true);
-      appReviews = carousel("vertical", 0, 1000, 5000);
-      // console.log("large");
-    } else {
-      // $(".swiper-container").each(function() {
-      //   $(this).removeClass("swiper-container-vertical");
-      // })
-      // $(".swiper-wrapper").removeAttr("style");
-      // $(".swiper-slide").each(function() {
-      //   $(this).removeAttr("style");
-      // })
-      // appReviews = "";
-      appReviews.destroy(false, true);
-      appReviews = carousel("horizontal", 30, 300);
-      // console.log("small");
-    }
+  function clearSwipers() {
+    appReviewsCarousel.destroy(false, true);
   }
 
-  initSize();
+  function setSwipers() {
+    appReviewsCarousel = appReviewsSettings();
+  }
 
-  $(window).resize(checkSize);
+  function resetSwipers() {
+    clearSwipers();
+    setSwipers();
+  }
+
+  mql.addListener(resetSwipers);
 
 });
