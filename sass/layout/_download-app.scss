@@ -29,9 +29,12 @@
       margin-top: 2em;
       float: left;
 
-      // @media only screen and (min-width: $break) {
-      //   float: none;
-      // }
+      @media only screen and (min-width: $break) {
+        // float: none;
+        position: relative;
+        top: -60px;
+        margin-left: calc(100% - 75px);
+      }
     }
 
     @media only screen and (min-width: $break) {
