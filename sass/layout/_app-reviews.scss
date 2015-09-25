@@ -1,15 +1,23 @@
 [data-section="app-reviews"] {
   background: color(accent);
   padding-bottom: 5%;
+  text-align: center;
   h1 {
     text-align: center;
   }
 
-  p {
+  > p {
+    position: relative;
+    top: -3.5em;
     text-align: center;
+    margin: 0 auto;
   }
 
   .swiper-container {
-    margin-top: 5%;
+    margin-top: 0;
+  }
+
+  figcaption {
+    text-align: left;
   }
 }

@@ -28,10 +28,6 @@
   }
   > p {
     @extend %paragraph-arrow;
-    display: inline-block;
-    padding: 4em 5% 1em;
-    background: url('/img/down-arrow-team.svg') no-repeat;
-    background-position: right;
   }
 }
 
