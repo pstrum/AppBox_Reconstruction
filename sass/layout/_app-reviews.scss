@@ -1,6 +1,7 @@
 [data-section="app-reviews"] {
   background: color(accent);
   padding-bottom: 5%;
+  text-align: center;
 
   .review-icon {
     position: relative;
@@ -28,6 +29,7 @@
     font-size: $font-large;
     margin: 1% 0;
   }
+
 
   .swiper-container {
     margin-top: 5%;

@@ -1,13 +1,13 @@
 .swiper-container {
   width: 90%;
-  @media screen and (min-width: 50em) {
+  @media screen and (min-width: $break) {
     width: 100%;
   }
 }
 
 .swiper-wrapper {
   height: calc(23em - 20vw);
-  @media screen and (min-width: 50em) {
+  @media screen and (min-width: $break) {
     width: 60%;
     height: calc(23em - 10vw);
     margin: 0 auto;

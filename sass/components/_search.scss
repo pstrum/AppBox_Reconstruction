@@ -28,7 +28,7 @@
     &:hover {
       opacity: 1;
     }
-    @media screen and (min-width: 50em) {
+    @media screen and (min-width: $break) {
       width: 14em;
     }
   }

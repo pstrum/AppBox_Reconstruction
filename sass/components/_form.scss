@@ -1,22 +1,22 @@
 form {
- ::-webkit-input-placeholder {
   padding-bottom: 1em;
-   color: text('placeholder');
-   font-size: $font-small;
 
-}
-
-:-moz-placeholder { /* Firefox 18- */
+  ::-webkit-input-placeholder {
    color: text('placeholder');
    font-size: $font-small;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+  :-moz-placeholder { /* Firefox 18- */
    color: text('placeholder');
    font-size: $font-small;
 }
 
-:-ms-input-placeholder {
+  ::-moz-placeholder {  /* Firefox 19+ */
+   color: text('placeholder');
+   font-size: $font-small;
+}
+
+  :-ms-input-placeholder {
    color: text('placeholder');
    font-size: $font-small;
 }
