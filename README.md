@@ -8,3 +8,4 @@ This reconstruction of the [AppBox template homepage](http://themeforest.net/ite
 - A [style guide](https://github.com/pstrum/AppBox_Reconstruction/blob/master/STYLE_GUIDE.md) with font styles, color palette, and core UI element Sass maps used as reference throughout the project to enhance consistency. 
 - A flexible and scalable [component library architecture](https://github.com/pstrum/AppBox_Reconstruction/tree/master/sass).
 - [UI components](https://github.com/pstrum/AppBox_Reconstruction/blob/master/COMPONENTS.md) created with advanced Sass techniques to promote sustainable, modular CSS
+- [Swiper](http://www.idangero.us/swiper/#.Vi-gXBCrSAw), a lightweight jQuery plugin, for interactive slider integration
